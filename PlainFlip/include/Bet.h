@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+#include "BetIterator.h"
+
 class Bet {
 private:
     vector<Card> cards;
@@ -41,6 +43,11 @@ public:
 			cout << cards[i].getID() << " ";
 		}
 		cout << endl;
+	}
+
+	BetIterator createIterator() {
+        BetIterator betIt(cards);
+        return betIt;
 	}
 };
 

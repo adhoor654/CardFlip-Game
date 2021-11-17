@@ -4,8 +4,19 @@
 #include "include/Card.h"
 #include "include/Bet.h"
 #include "include/Deck.h"
+#include "include/Iterator.h"
+#include "include/DeckIterator.h"
 
 using namespace std;
+
+void print(Iterator &it) {
+    Card elmt = it.current();
+
+    while (!it.isDone()) {
+        cout << elmt.getID() << " ";
+        elmt = it.next();
+    }
+}
 
 int main() {
     //srand(time(NULL));
@@ -35,9 +46,19 @@ int main() {
         //expected result: 1 5 9 13 17 21 3 7 11 15 19 23
     collection.printCards(); */
 
+    BetIterator betIt = collection.createIterator();
+    cout << endl << "we placed a bet on: ";
+    print(betIt);
+
     Deck deck;
     deck.shuffle();
     deck.printCards();
+
+    DeckIterator deckIt = deck.createIterator();
+    cout << "these cards will be drawn: ";
+    print(deckIt);
+
+
 
     return 0;
 }

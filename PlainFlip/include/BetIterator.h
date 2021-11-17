@@ -2,21 +2,21 @@
 #define BETITERATOR_H_
 
 #include <vector>
+
 #include "Iterator.h"
-using namespace std;
 
-class BetIterator : public Iterator {/*
+class BetIterator : public Iterator {
 public:
-    VectorIterator(vector<int> v) : vec(v), cursor(0) {}
+    BetIterator(vector<Card> v) : vec(v), cursor(0) {}
 
-    int  first()        { return vec[0]; }
-    int  next()         { return vec[++cursor]; }
-    int  current_item() { return vec[cursor]; }
-    bool is_done()      { return cursor >= vec.size(); }
+    //Card  first()        { return vec[0]; }
+    Card  current() { return vec[cursor]; }
+    Card  next()    { return vec[++cursor]; }
+    bool isDone()   { return cursor >= vec.size(); }
 
 private:
-    vector<int> vec;
+    vector<Card> vec;
     int cursor;
-};*/
+};
 
 #endif /* BETITERATOR_H_ */

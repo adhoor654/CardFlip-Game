@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 
+#include "DeckIterator.h"
+
 class Deck {
 private:
 	Card cards[24];
@@ -33,6 +35,11 @@ public:
 			cout << cards[i].getID() << " ";
 		}
 		cout << endl;
+	}
+
+	DeckIterator createIterator() {
+        DeckIterator deckIt(cards);
+        return deckIt;
 	}
 };
 

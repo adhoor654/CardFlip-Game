@@ -17,3 +17,31 @@
 1637130122 c:\users\drizi\documents\135\wx-workspace\plainflip\include\deck.h
 	<stdlib.h>
 
+1637134216 source:c:\users\drizi\documents\github\cardflip-game\plainflip\main.cpp
+	<iostream>
+	<time.h>
+	"include/Card.h"
+	"include/Bet.h"
+	"include/Deck.h"
+	"include/Iterator.h"
+	"include/DeckIterator.h"
+
+1637129238 c:\users\drizi\documents\github\cardflip-game\plainflip\include\card.h
+
+1637134242 c:\users\drizi\documents\github\cardflip-game\plainflip\include\bet.h
+	<vector>
+	"BetIterator.h"
+
+1637133906 c:\users\drizi\documents\github\cardflip-game\plainflip\include\deck.h
+	<stdlib.h>
+	"DeckIterator.h"
+
+1637133940 c:\users\drizi\documents\github\cardflip-game\plainflip\include\deckiterator.h
+	"Iterator.h"
+
+1637130361 c:\users\drizi\documents\github\cardflip-game\plainflip\include\iterator.h
+
+1637134230 c:\users\drizi\documents\github\cardflip-game\plainflip\include\betiterator.h
+	<vector>
+	"Iterator.h"
+

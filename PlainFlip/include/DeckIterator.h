@@ -3,20 +3,19 @@
 
 #include "Iterator.h"
 
-class DeckIterator : public Iterator {/*
+class DeckIterator : public Iterator {
 public:
-    ArrayIterator(int arr[], int sz)
-        : array(arr), size(sz), cursor(0) {}
+    DeckIterator(Card arr[])
+        : array(arr), cursor(0) {}
 
-    int  first()        { return array[0]; }
-    int  next()         { return array[++cursor]; }
-    int  current_item() { return array[cursor]; }
-    bool is_done()      { return cursor >= size; }
+    //Card  first()        { return array[0]; }
+    Card  current() { return array[cursor]; }
+    Card  next()    { return array[++cursor]; }
+    bool  isDone()  { return cursor >= 12; }
 
 private:
-    int *array;
-    int size;
+    Card *array;
     int cursor;
-};*/
+};
 
 #endif /* DECKITERATOR_H_ */
