@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1637117019 source:c:\users\drizi\documents\135\wx-workspace\plainflip\src\card.cpp
+	"Card.h"
+
+1637129238 c:\users\drizi\documents\135\wx-workspace\plainflip\include\card.h
+
+1637130115 source:c:\users\drizi\documents\135\wx-workspace\plainflip\main.cpp
+	<iostream>
+	<time.h>
+	"include/Card.h"
+	"include/Bet.h"
+	"include/Deck.h"
+
+1637130370 c:\users\drizi\documents\135\wx-workspace\plainflip\include\bet.h
+	<vector>
+
+1637130122 c:\users\drizi\documents\135\wx-workspace\plainflip\include\deck.h
+	<stdlib.h>
+
