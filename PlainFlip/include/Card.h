@@ -19,6 +19,8 @@ public:
     bool hasBeenDrawn()     { return drawn; };
     void draw()             { drawn = true; };
 
+    bool matches(Card other){ return (id==other.getID()); };
+
 private:
     int id; //expected val 1 - 24
     bool drawn;
