@@ -1,5 +1,5 @@
-#ifndef DECKITERATOR_H_
-#define DECKITERATOR_H_
+#ifndef DECKITERATOR_H
+#define DECKITERATOR_H
 
 #include "Iterator.h"
 
@@ -11,11 +11,11 @@ public:
     //Card  first()        { return array[0]; }
     Card  current() { return array[cursor]; }
     Card  next()    { return array[++cursor]; }
-    bool  isDone()  { return cursor >= 12; }
+    bool  isDone()  { return (cursor >= 12); }
 
 private:
     Card *array;
     int cursor;
 };
 
-#endif /* DECKITERATOR_H_ */
+#endif /* DECKITERATOR_H */

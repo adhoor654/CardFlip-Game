@@ -47,8 +47,9 @@ int main() {
     collection.printCards(); */
 
     BetIterator betIt = collection.createIterator();
-    cout << endl << "we placed a bet on: ";
+    cout << "we placed a bet on: ";
     print(betIt);
+    cout << endl;
 
     Deck deck;
     deck.shuffle();
@@ -58,6 +59,7 @@ int main() {
     cout << "these cards will be drawn: ";
     print(deckIt);
 
+    cout << endl;
 
 
     return 0;

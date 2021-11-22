@@ -1,6 +1,8 @@
 #ifndef ITERATOR_H
 #define ITERATOR_H
 
+#include "Card.h"
+
 class Iterator {
 public:
     Iterator() {}

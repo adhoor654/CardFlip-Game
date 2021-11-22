@@ -1,5 +1,5 @@
-#ifndef BETITERATOR_H_
-#define BETITERATOR_H_
+#ifndef BETITERATOR_H
+#define BETITERATOR_H
 
 #include <vector>
 
@@ -12,11 +12,11 @@ public:
     //Card  first()        { return vec[0]; }
     Card  current() { return vec[cursor]; }
     Card  next()    { return vec[++cursor]; }
-    bool isDone()   { return cursor >= vec.size(); }
+    bool isDone()   { return (cursor >= vec.size()); }
 
 private:
     vector<Card> vec;
     int cursor;
 };
 
-#endif /* BETITERATOR_H_ */
+#endif /* BETITERATOR_H */

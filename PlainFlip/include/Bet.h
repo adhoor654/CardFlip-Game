@@ -1,6 +1,6 @@
 #ifndef BET_H
 #define BET_H
-
+#include <iostream>
 #include <vector>
 using namespace std;
 
