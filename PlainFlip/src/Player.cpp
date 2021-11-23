@@ -4,14 +4,11 @@
     //Better *better
     //Bet bet
     //int score
-
 Player::Player() {
-    better = new SimpleBetter;
     score = 0;
 }
 
-Player::Player(int better_type) {
-    score = 0;
+void Player::setBetterType(int better_type) {
     switch(better_type) {
         case 2:
             better = new CleverBetter;
@@ -19,13 +16,11 @@ Player::Player(int better_type) {
         case 1:
             better = new SimpleBetter;
             break;
-        default:
-            Player();
     }
 }
 
-void Player::placeBet(DeckIterator deckIt) {
-    bet = better->placeBet(deckIt);
+void Player::placeBet(DeckIterator deckIt, int roundMinusOne) {
+    bet = better->placeBet(deckIt, roundMinusOne);
 }
 
 //Note: if your betCode is invalid, your Bet will be empty

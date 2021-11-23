@@ -39,6 +39,14 @@ public:
 		cout << endl;
 	}
 
+	bool isRowFull(int row) {
+        for(int i=0; i<3; i++) {
+            if(cards[row*4 - i].hasBeenDrawn())
+                return false;
+        }
+        return true;
+    }
+
 	DeckIterator createIterator() {
         DeckIterator deckIt(cards);
         return deckIt;

@@ -1,0 +1,113 @@
+The deck contains cards: 7 2 24 23 11 14 19 16 6 5 15 17 | 21 18 12 1 9 22 10 8 20 3 13 4
+
+---ROUND 1---
+Player is betting on cards: 9
+Computer is betting on cards: 16 15 14 13
+We drew card 7
+
+Current Score
+     Player: 0
+   Computer: 0
+
+---ROUND 2---
+Player is betting on cards: 5
+Computer is betting on cards: 2 6 10 14 18 22
+We drew card 2
+
+Current Score
+     Player: 0
+   Computer: 4
+
+---ROUND 3---
+Player is betting on cards:
+Computer is betting on cards: 24 23 22 21
+We drew card 24
+
+Current Score
+     Player: 0
+   Computer: 10
+
+---ROUND 4---
+Player is betting on cards: 3 7 11 15 19 23
+Computer is betting on cards: 1 5 9 13 17 21
+We drew card 23
+   Player won!
+
+Current Score
+     Player: 4
+   Computer: 10
+
+---ROUND 5---
+Player is betting on cards: 7
+Computer is betting on cards: 1 5 9 13 17 21
+We drew card 11
+
+Current Score
+     Player: 4
+   Computer: 10
+
+---ROUND 6---
+Player is betting on cards: 24
+Computer is betting on cards: 16 15 14 13
+We drew card 14
+
+Current Score
+     Player: 4
+   Computer: 16
+
+---ROUND 7---
+Player is betting on cards: 20 19 18 17
+Computer is betting on cards: 6
+We drew card 19
+   Player won!
+
+Current Score
+     Player: 10
+   Computer: 16
+
+---ROUND 8---
+Player is betting on cards: 12 11 10 9 16 15 14 13
+Computer is betting on cards: 10
+We drew card 16
+   Player won!
+
+Current Score
+     Player: 13
+   Computer: 16
+
+---ROUND 9---
+Player is betting on cards: 5
+Computer is betting on cards: 1 5 9 13 17 21
+We drew card 6
+
+Current Score
+     Player: 13
+   Computer: 16
+
+---ROUND 10---
+Player is betting on cards: 8 7 6 5
+Computer is betting on cards: 21
+We drew card 5
+   Player won!
+
+Current Score
+     Player: 19
+   Computer: 16
+
+---ROUND 11---
+Player is betting on cards: 4
+Computer is betting on cards: 2 6 10 14 18 22
+We drew card 15
+
+Current Score
+     Player: 19
+   Computer: 16
+
+---ROUND 12---
+Player is betting on cards: 12 11 10 9
+Computer is betting on cards: 24 23 22 21
+We drew card 17
+
+Current Score
+     Player: 19
+   Computer: 16

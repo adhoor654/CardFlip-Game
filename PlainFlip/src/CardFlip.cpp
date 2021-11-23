@@ -12,7 +12,7 @@
 
 CardFlip::CardFlip(int difficulty) {
     Player user;
-    Player computer(difficulty);
+    Player computer;
     Deck deck;
     deck.shuffle();
     deckIt = deck.createIterator();
@@ -22,7 +22,7 @@ CardFlip::CardFlip(int difficulty) {
 
 void CardFlip::reset(int difficulty) {
     srand(time(NULL));
-    Player computer(difficulty);
+    computer.setBetterType(difficulty);
     deck.shuffle();
     deckIt = deck.createIterator();
     round = 1;
@@ -34,12 +34,15 @@ int CardFlip::getRound() {
     return round;
 }
 
+//since playRound increments the round count and draws a card
+//you need to get the round and the card before calling playRound
+//or else the deckIterator will go out of bounds after the last round
 bool CardFlip::playRound(int betCode) {
     user.useBetCode(betCode);
     cout << "Player is ";
     user.printBet();
 
-    computer.placeBet(deck.createIterator());
+    computer.placeBet(deck.createIterator(), round-1);
     cout << "Computer is ";
     computer.printBet();
 

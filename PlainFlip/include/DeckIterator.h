@@ -13,6 +13,7 @@ public:
     Card  current() { return array[cursor]; }
     Card  next()    { return array[++cursor]; }
     bool  isDone()  { return (cursor >= 12); }
+    void  reset()   { cursor = 0; }
 
 private:
     Card *array;

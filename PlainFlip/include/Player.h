@@ -12,8 +12,8 @@ class Player {
     int score;
   public:
     Player();
-    Player(int better_type);
-    void placeBet(DeckIterator deckIt);
+    void setBetterType(int better_type);
+    void placeBet(DeckIterator deckIt, int roundMinusOne);
     void useBetCode(int betCode);
     bool resolveBet(Card card);
     int getScore();
