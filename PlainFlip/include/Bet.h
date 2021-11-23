@@ -1,5 +1,6 @@
 #ifndef BET_H
 #define BET_H
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -43,6 +44,12 @@ public:
 			cout << cards[i].getID() << " ";
 		}
 		cout << endl;
+	}
+
+	void reset() {
+	    while (!cards.empty()) {
+            cards.pop_back();
+        }
 	}
 
 	BetIterator createIterator() {

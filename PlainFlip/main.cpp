@@ -1,11 +1,9 @@
 #include <iostream>
 #include <time.h>
 
-#include "include/Card.h"
-#include "include/Bet.h"
+
 #include "include/Deck.h"
-#include "include/Iterator.h"
-#include "include/DeckIterator.h"
+#include "include/Player.h"
 
 using namespace std;
 
@@ -20,7 +18,7 @@ void print(Iterator &it) {
 
 int main() {
     //srand(time(NULL));
-
+    /*
     Card ace(1);
     //cout << "Hello world! " << ace.getID() << endl;
 
@@ -31,7 +29,7 @@ int main() {
     collection.addSingleCard(23);
     collection.addSingleCard(12);
         //expected result: 3 7 23 12
-    collection.printCards();
+    //collection.printCards();
 
     /* test for addCardRow()
     collection.addCardRow(1);
@@ -46,21 +44,42 @@ int main() {
         //expected result: 1 5 9 13 17 21 3 7 11 15 19 23
     collection.printCards(); */
 
-    BetIterator betIt = collection.createIterator();
+    /*BetIterator betIt = collection.createIterator();
     cout << "we placed a bet on: ";
     print(betIt);
     cout << endl;
+    */
 
     Deck deck;
     deck.shuffle();
     deck.printCards();
-
-    DeckIterator deckIt = deck.createIterator();
-    cout << "these cards will be drawn: ";
-    print(deckIt);
-
     cout << endl;
 
+    /*DeckIterator deckIt = deck.createIterator();
+    cout << "these cards will be drawn: ";
+    print(deckIt);
+    cout << endl;*/
+
+    DeckIterator deckIt = deck.createIterator();
+    Card drawnCard = deckIt.current();
+
+    Player p1;
+    p1.useBetCode(23);
+    p1.printBet();
+    if(p1.resolveBet(drawnCard))
+        cout << "We drew CARD " << drawnCard.getID() << " so the bet was RIGHT!" << endl;
+    else
+        cout << "We drew CARD " << drawnCard.getID() << " so the bet was WRONG :(" << endl;
+    cout << endl;
+
+    p1.useBetCode(35);
+    p1.printBet();
+    drawnCard = deckIt.next();
+    if(p1.resolveBet(drawnCard))
+        cout << "We drew CARD " << drawnCard.getID() << " so the bet was RIGHT!" << endl;
+    else
+        cout << "We drew CARD " << drawnCard.getID() << " so the bet was WRONG :(" << endl;
+    cout << endl;
 
     return 0;
 }

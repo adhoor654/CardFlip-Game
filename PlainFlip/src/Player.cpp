@@ -5,22 +5,81 @@
     //Bet bet
     //int score
 
-Player::Player(int better_type) {
+Player::Player() {
+    better = new SimpleBetter;
+}
 
+Player::Player(int better_type) {
+    switch(better_type) {
+        case 2:
+            better = new CleverBetter;
+            break;
+        case 1:
+            better = new SimpleBetter;
+            break;
+        default:
+            Player();
+    }
 }
 
 void Player::placeBet(DeckIterator deckIt) {
-
+    bet = better->placeBet(deckIt);
 }
 
+//Note: if your betCode is invalid, your Bet will be empty
 void Player::useBetCode(int betCode) {
-
+    bet.reset(); //make sure the bet is empty
+    if (1 <= betCode && betCode <= 24) {
+        bet.addSingleCard(betCode); //add the card numbered 1 - 24
+    }
+    else if (25 <= betCode && betCode <=30) {
+        bet.addCardRow(betCode-24); //add the card row numbered 1 - 6
+    }
+    else if (31 <= betCode && betCode <=34) {
+        bet.addCardCol(betCode-30); //add the card column numbered 1 - 4
+    }
+    else if (betCode == 35) {
+        bet.addCardRow(1); //add card rows 1 and 2
+        bet.addCardRow(2);
+    }
+    else if (betCode == 36) {
+        bet.addCardRow(3); //add card rows 3 and 4
+        bet.addCardRow(4);
+    }
+    else if (betCode == 37) {
+        bet.addCardRow(5); //add card rows 5 and 6
+        bet.addCardRow(6);
+    }
+    else if (betCode == 38) {
+        bet.addCardCol(1); //add card columns 1 and 2
+        bet.addCardCol(2);
+    }
+    else if (betCode == 39) {
+        bet.addCardCol(3); //add card columns 3 and 4
+        bet.addCardCol(4);
+    }
 }
 
 bool Player::resolveBet(Card card) {
+    BetIterator betIt = bet.createIterator();
+    Card betCard = betIt.current();
+
+    while (!betIt.isDone()) {
+        if(card.matches(betCard)) { //the drawn card matches one of the bet cards
+            //which means the bet was correct
+            return true;
+        }
+        betCard = betIt.next();
+    }
+    //otherwise....
     return false;
 }
 
 int Player::getScore() {
 	return score;
+}
+
+void Player::printBet() {
+    cout << "Player is ";
+    bet.printCards();
 }

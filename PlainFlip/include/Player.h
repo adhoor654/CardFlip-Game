@@ -7,15 +7,17 @@ using namespace std;
 
 class Player {
   private:
-    //Better *better;
+    Better *better;
     Bet bet;
     int score;
   public:
-    explicit Player(int better_type);
+    Player();
+    Player(int better_type);
     void placeBet(DeckIterator deckIt);
     void useBetCode(int betCode);
     bool resolveBet(Card card);
     int getScore();
+    void printBet();
 };
 
 #endif /* PLAYER_H */

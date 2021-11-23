@@ -2,6 +2,7 @@
 #define DECK_H
 
 #include <stdlib.h>
+using namespace std;
 
 #include "DeckIterator.h"
 
@@ -26,7 +27,7 @@ public:
 	}
 
 	void printCards() {
-		cout << "the deck contains cards: ";
+		cout << "The deck contains cards: ";
 		for(int i=0; i<12; i++) {
 			cout << cards[i].getID() << " ";
 		}

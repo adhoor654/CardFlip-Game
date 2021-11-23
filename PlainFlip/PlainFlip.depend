@@ -17,23 +17,20 @@
 1637130122 c:\users\drizi\documents\135\wx-workspace\plainflip\include\deck.h
 	<stdlib.h>
 
-1637622184 source:c:\users\drizi\documents\github\cardflip-game\plainflip\main.cpp
+1637626583 source:c:\users\drizi\documents\github\cardflip-game\plainflip\main.cpp
 	<iostream>
 	<time.h>
-	"include/Card.h"
-	"include/Bet.h"
 	"include/Deck.h"
-	"include/Iterator.h"
-	"include/DeckIterator.h"
+	"include/Player.h"
 
 1637270743 c:\users\drizi\documents\github\cardflip-game\plainflip\include\card.h
 
-1637622587 c:\users\drizi\documents\github\cardflip-game\plainflip\include\bet.h
+1637624633 c:\users\drizi\documents\github\cardflip-game\plainflip\include\bet.h
 	<iostream>
 	<vector>
 	"BetIterator.h"
 
-1637270743 c:\users\drizi\documents\github\cardflip-game\plainflip\include\deck.h
+1637624622 c:\users\drizi\documents\github\cardflip-game\plainflip\include\deck.h
 	<stdlib.h>
 	"DeckIterator.h"
 
@@ -47,13 +44,17 @@
 	<vector>
 	"Iterator.h"
 
-1637623232 source:c:\users\drizi\documents\github\cardflip-game\plainflip\src\player.cpp
+1637626524 source:c:\users\drizi\documents\github\cardflip-game\plainflip\src\player.cpp
 	"Player.h"
 
-1637623389 c:\users\drizi\documents\github\cardflip-game\plainflip\include\player.h
+1637624409 c:\users\drizi\documents\github\cardflip-game\plainflip\include\player.h
 	"Betters.h"
 
 1637623383 c:\users\drizi\documents\github\cardflip-game\plainflip\include\betters.h
 	"Bet.h"
 	"DeckIterator.h"
+
+1637631535 source:c:\users\drizi\documents\github\cardflip-game\plainflip\src\betters.cpp
+	<stdlib.h>
+	"Betters.h"
 
