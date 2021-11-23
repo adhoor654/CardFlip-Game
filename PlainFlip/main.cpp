@@ -1,9 +1,7 @@
 #include <iostream>
 #include <time.h>
 
-
-#include "include/Deck.h"
-#include "include/Player.h"
+#include "include/CardFlip.h"
 
 using namespace std;
 
@@ -49,7 +47,7 @@ int main() {
     print(betIt);
     cout << endl;
     */
-
+    /*
     Deck deck;
     deck.shuffle();
     deck.printCards();
@@ -59,7 +57,7 @@ int main() {
     cout << "these cards will be drawn: ";
     print(deckIt);
     cout << endl;*/
-
+    /*
     DeckIterator deckIt = deck.createIterator();
     Card drawnCard = deckIt.current();
 
@@ -67,19 +65,46 @@ int main() {
     p1.useBetCode(23);
     p1.printBet();
     if(p1.resolveBet(drawnCard))
-        cout << "We drew CARD " << drawnCard.getID() << " so the bet was RIGHT!" << endl;
+        cout << "We drew CARD " << drawnCard.getID() << " so P1's bet was RIGHT!" << endl;
     else
-        cout << "We drew CARD " << drawnCard.getID() << " so the bet was WRONG :(" << endl;
+        cout << "We drew CARD " << drawnCard.getID() << " so P1's bet was WRONG :(" << endl;
+    Player p2(1);
+    p2.placeBet(deck.createIterator());
+    p2.printBet();
+    if(p2.resolveBet(drawnCard))
+        cout << "We drew CARD " << drawnCard.getID() << " so P2's bet was RIGHT!" << endl;
+    else
+        cout << "We drew CARD " << drawnCard.getID() << " so P2's bet was WRONG :(" << endl;
     cout << endl;
 
     p1.useBetCode(35);
     p1.printBet();
     drawnCard = deckIt.next();
     if(p1.resolveBet(drawnCard))
-        cout << "We drew CARD " << drawnCard.getID() << " so the bet was RIGHT!" << endl;
+        cout << "We drew CARD " << drawnCard.getID() << " so P1's bet was RIGHT!" << endl;
     else
-        cout << "We drew CARD " << drawnCard.getID() << " so the bet was WRONG :(" << endl;
+        cout << "We drew CARD " << drawnCard.getID() << " so P1's bet was WRONG :(" << endl;
+    p2.placeBet(deck.createIterator());
+    p2.printBet();
+    if(p2.resolveBet(drawnCard))
+        cout << "We drew CARD " << drawnCard.getID() << " so P2's bet was RIGHT!" << endl;
+    else
+        cout << "We drew CARD " << drawnCard.getID() << " so P2's bet was WRONG :(" << endl;
     cout << endl;
+    */
+
+    CardFlip game(1);
+
+    for (int i=0; i<12; i++) {
+        cout << endl << "---ROUND " << game.getRound() << "---" << endl;
+        cout << "We drew card " << game.getCard().getID() << endl;
+        bool playerWon = game.playRound(15);
+        if (playerWon) cout << "   Player won!" << endl;
+        pair<int,int>scores = game.getScores();
+        cout << endl << "Current Score" << endl;
+        cout << "    Player:  " << scores.first << endl;
+        cout << "   Computer: " << scores.second << endl;
+    }
 
     return 0;
 }

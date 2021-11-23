@@ -1,0 +1,110 @@
+The deck contains cards: 20 13 19 6 21 3 22 14 1 23 15 8 | 12 24 9 17 7 4 18 11 5 16 10 2
+
+---ROUND 1---
+We drew card 20
+Player is betting on cards: 15
+Computer is betting on cards: 3 7 11 15 19 23
+
+Current Score
+    Player:  0
+   Computer: 0
+
+---ROUND 2---
+We drew card 13
+Player is betting on cards: 15
+Computer is betting on cards: 1 5 9 13 17 21
+
+Current Score
+    Player:  0
+   Computer: 4
+
+---ROUND 3---
+We drew card 19
+Player is betting on cards: 15
+Computer is betting on cards: 1 5 9 13 17 21
+
+Current Score
+    Player:  0
+   Computer: 4
+
+---ROUND 4---
+We drew card 6
+Player is betting on cards: 15
+Computer is betting on cards: 20 19 18 17 24 23 22 21
+
+Current Score
+    Player:  0
+   Computer: 4
+
+---ROUND 5---
+We drew card 21
+Player is betting on cards: 15
+Computer is betting on cards: 3 7 11 15 19 23 4 8 12 16 20 24
+
+Current Score
+    Player:  0
+   Computer: 4
+
+---ROUND 6---
+We drew card 3
+Player is betting on cards: 15
+Computer is betting on cards: 4 3 2 1 8 7 6 5
+
+Current Score
+    Player:  0
+   Computer: 7
+
+---ROUND 7---
+We drew card 22
+Player is betting on cards: 15
+Computer is betting on cards: 1 5 9 13 17 21
+
+Current Score
+    Player:  0
+   Computer: 7
+
+---ROUND 8---
+We drew card 14
+Player is betting on cards: 15
+Computer is betting on cards: 3 7 11 15 19 23 4 8 12 16 20 24
+
+Current Score
+    Player:  0
+   Computer: 7
+
+---ROUND 9---
+We drew card 1
+Player is betting on cards: 15
+Computer is betting on cards: 4 3 2 1 8 7 6 5
+
+Current Score
+    Player:  0
+   Computer: 10
+
+---ROUND 10---
+We drew card 23
+Player is betting on cards: 15
+Computer is betting on cards: 2 6 10 14 18 22
+
+Current Score
+    Player:  0
+   Computer: 10
+
+---ROUND 11---
+We drew card 15
+Player is betting on cards: 15
+Computer is betting on cards: 20 19 18 17 24 23 22 21
+   Player won!
+
+Current Score
+    Player:  24
+   Computer: 10
+
+---ROUND 12---
+We drew card 8
+Player is betting on cards: 15
+Computer is betting on cards: 3 7 11 15 19 23 4 8 12 16 20 24
+
+Current Score
+    Player:  24
+   Computer: 12

@@ -5,6 +5,7 @@
 
 class DeckIterator : public Iterator {
 public:
+    DeckIterator() {}
     DeckIterator(Card arr[])
         : array(arr), cursor(0) {}
 

@@ -10,6 +10,7 @@ using namespace std;
 class Bet {
 private:
     vector<Card> cards;
+    int payout;
 
 public:
     bool isEmpty() {
@@ -51,6 +52,14 @@ public:
             cards.pop_back();
         }
 	}
+
+	int getPayout() {
+        return payout;
+    }
+
+    void setPayout(int num) {
+        payout = num;
+    }
 
 	BetIterator createIterator() {
         BetIterator betIt(cards);

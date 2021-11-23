@@ -28,12 +28,14 @@
 		<Unit filename="include/BetIterator.h" />
 		<Unit filename="include/Betters.h" />
 		<Unit filename="include/Card.h" />
+		<Unit filename="include/CardFlip.h" />
 		<Unit filename="include/Deck.h" />
 		<Unit filename="include/DeckIterator.h" />
 		<Unit filename="include/Iterator.h" />
 		<Unit filename="include/Player.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Betters.cpp" />
+		<Unit filename="src/CardFlip.cpp" />
 		<Unit filename="src/Player.cpp" />
 		<Extensions>
 			<code_completion />
