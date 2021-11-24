@@ -1690,9 +1690,12 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\univ\theme.h
 	"wx/string.h"
 
-1637704027 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+1637794571 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+	<wx/bmpbuttn.h>
 	<wx/frame.h>
 	<wx/menu.h>
+	<wx/sizer.h>
+	<wx/statbmp.h>
 	<wx/statusbr.h>
 
 1587575368 c:\wxwidgets-3.0.5\include\wx\menu.h
@@ -1796,9 +1799,11 @@
 	"wx/list.h"
 	"wx/dynarray.h"
 
-1637704029 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
+1637794571 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
 	"CardFlipMain.h"
 	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/image.h>
 	<wx/intl.h>
 	<wx/string.h>
 
@@ -1923,4 +1928,141 @@
 	<aygshell.h>
 
 1587575368 c:\wxwidgets-3.0.5\include\wx\msw\rcdefs.h
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\bmpbuttn.h
+	"wx/defs.h"
+	"wx/button.h"
+	"wx/univ/bmpbuttn.h"
+	"wx/msw/bmpbuttn.h"
+	"wx/motif/bmpbuttn.h"
+	"wx/gtk/bmpbuttn.h"
+	"wx/gtk1/bmpbuttn.h"
+	"wx/osx/bmpbuttn.h"
+	"wx/cocoa/bmpbuttn.h"
+	"wx/os2/bmpbuttn.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\univ\bmpbuttn.h
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\msw\bmpbuttn.h
+	"wx/button.h"
+	"wx/bitmap.h"
+	"wx/brush.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\motif\bmpbuttn.h
+	"wx/motif/bmpmotif.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\motif\bmpmotif.h
+	"wx/defs.h"
+	"wx/bitmap.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\gtk\bmpbuttn.h
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\gtk1\bmpbuttn.h
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\osx\bmpbuttn.h
+	"wx/button.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\cocoa\bmpbuttn.h
+	"wx/cocoa/NSButton.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\os2\bmpbuttn.h
+	"wx/button.h"
+	"wx/dcclient.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\dcclient.h
+	"wx/dc.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\sizer.h
+	"wx/defs.h"
+	"wx/window.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\statbmp.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/bitmap.h"
+	"wx/icon.h"
+	"wx/univ/statbmp.h"
+	"wx/msw/statbmp.h"
+	"wx/motif/statbmp.h"
+	"wx/gtk/statbmp.h"
+	"wx/gtk1/statbmp.h"
+	"wx/osx/statbmp.h"
+	"wx/cocoa/statbmp.h"
+	"wx/os2/statbmp.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\univ\statbmp.h
+	"wx/bitmap.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\msw\statbmp.h
+	"wx/control.h"
+	"wx/icon.h"
+	"wx/bitmap.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\motif\statbmp.h
+	"wx/motif/bmpmotif.h"
+	"wx/icon.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\gtk\statbmp.h
+	"wx/icon.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\gtk1\statbmp.h
+	"wx/icon.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\osx\statbmp.h
+	"wx/osx/carbon/statbmp.h"
+	"wx/generic/statbmpg.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\osx\carbon\statbmp.h
+	"wx/icon.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\generic\statbmpg.h
+	"wx/statbmp.h"
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\cocoa\statbmp.h
+
+1587575368 c:\wxwidgets-3.0.5\include\wx\os2\statbmp.h
+	"wx/control.h"
+	"wx/icon.h"
+
+1637794612 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\betters.cpp
+	<algorithm>
+	<stdlib.h>
+	"../include/Betters.h"
+
+1637662751 c:\users\drizi\documents\github\cardflip-game\cardflip\include\betters.h
+	"Bet.h"
+	"Deck.h"
+
+1637633193 c:\users\drizi\documents\github\cardflip-game\cardflip\include\bet.h
+	<iostream>
+	<vector>
+	"BetIterator.h"
+
+1637622117 c:\users\drizi\documents\github\cardflip-game\cardflip\include\betiterator.h
+	<vector>
+	"Iterator.h"
+
+1637622516 c:\users\drizi\documents\github\cardflip-game\cardflip\include\iterator.h
+	"Card.h"
+
+1637270743 c:\users\drizi\documents\github\cardflip-game\cardflip\include\card.h
+
+1637657981 c:\users\drizi\documents\github\cardflip-game\cardflip\include\deck.h
+	<iostream>
+	<stdlib.h>
+	"DeckIterator.h"
+
+1637640225 c:\users\drizi\documents\github\cardflip-game\cardflip\include\deckiterator.h
+	"Iterator.h"
+
+1637794624 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\cardflip.cpp
+	"../include/CardFlip.h"
+	<time.h>
+	<utility>
+
+1637701073 c:\users\drizi\documents\github\cardflip-game\cardflip\include\cardflip.h
+	"Player.h"
+
+1637663141 c:\users\drizi\documents\github\cardflip-game\cardflip\include\player.h
+	"Betters.h"
 

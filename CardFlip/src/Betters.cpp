@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <stdlib.h>
 
-#include "Betters.h"
+#include "../include/Betters.h"
 
 //will create and return a Bet containing either:
 //two columns, two rows, or one column

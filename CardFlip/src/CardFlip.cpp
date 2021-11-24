@@ -1,4 +1,4 @@
-#include "CardFlip.h"
+#include "../include/CardFlip.h"
 
 #include <time.h>
 #include <utility>

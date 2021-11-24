@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "../include/Player.h"
 
 //private variables (for temporary reference):
     //Better *better
