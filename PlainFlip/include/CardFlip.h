@@ -1,7 +1,6 @@
 #ifndef CARDFLIP_H
 #define CARDFLIP_H
 
-#include "Deck.h"
 #include "Player.h"
 
 class CardFlip {
