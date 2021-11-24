@@ -22,9 +22,10 @@
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="col_12_button" member="yes">
 											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_1-2.png</bitmap>
 											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_1-2_pressed.png</selected>
+											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
-										<border>5</border>
+										<border>10</border>
 										<option>1</option>
 									</object>
 									<object class="sizeritem">
@@ -33,6 +34,7 @@
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="col_1_button" member="yes">
 													<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_1.png</bitmap>
 													<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_1_pressed.png</selected>
+													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 												<border>5</border>
@@ -42,6 +44,7 @@
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="col_2_button" member="yes">
 													<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_2.png</bitmap>
 													<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_2_pressed.png</selected>
+													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 												<border>5</border>
@@ -64,9 +67,10 @@
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="col_34_button" member="yes">
 											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_3-4.png</bitmap>
 											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_3-4_pressed.png</selected>
+											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
-										<border>5</border>
+										<border>10</border>
 										<option>1</option>
 									</object>
 									<object class="sizeritem">
@@ -75,6 +79,7 @@
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON5" variable="col_3_button" member="yes">
 													<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_3.png</bitmap>
 													<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_3_pressed.png</selected>
+													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 												<border>5</border>
@@ -84,6 +89,7 @@
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON6" variable="col_4_button" member="yes">
 													<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_4.png</bitmap>
 													<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\col_4_pressed.png</selected>
+													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 												<border>5</border>
@@ -107,37 +113,131 @@
 					<object class="sizeritem">
 						<object class="wxBoxSizer" variable="secondSizer" member="no">
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer1" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer1" member="no">
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON7" variable="row_12_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer2" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer2" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON8" variable="row_1_button" member="yes">
+											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\row_1.png</bitmap>
+											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\row_1_pressed.png</selected>
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON9" variable="row_2_button" member="yes">
+											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\row_2.png</bitmap>
+											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\row_2_pressed.png</selected>
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer3" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer3" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON10" variable="card_1_button" member="yes">
+											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\1.png</bitmap>
+											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\1_pressed.png</selected>
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON11" variable="card_5_button" member="yes">
+											<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\5.png</bitmap>
+											<selected>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\5_pressed.png</selected>
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer4" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer4" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON12" variable="BitmapButton1" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON13" variable="BitmapButton4" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer5" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer5" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON14" variable="BitmapButton5" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON15" variable="BitmapButton6" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="secondSizer6" member="no" />
+								<object class="wxBoxSizer" variable="secondSizer6" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON16" variable="BitmapButton7" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON17" variable="BitmapButton8" member="yes" />
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>

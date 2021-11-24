@@ -41,18 +41,40 @@ class CardFlipFrame: public wxFrame
         static const long ID_BITMAPBUTTON2;
         static const long ID_BITMAPBUTTON5;
         static const long ID_BITMAPBUTTON6;
+        static const long ID_BITMAPBUTTON7;
+        static const long ID_BITMAPBUTTON8;
+        static const long ID_BITMAPBUTTON9;
+        static const long ID_BITMAPBUTTON10;
+        static const long ID_BITMAPBUTTON11;
+        static const long ID_BITMAPBUTTON12;
+        static const long ID_BITMAPBUTTON13;
+        static const long ID_BITMAPBUTTON14;
+        static const long ID_BITMAPBUTTON15;
+        static const long ID_BITMAPBUTTON16;
+        static const long ID_BITMAPBUTTON17;
         static const long idMenuQuit;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
         //*)
 
         //(*Declarations(CardFlipFrame)
+        wxBitmapButton* BitmapButton1;
+        wxBitmapButton* BitmapButton4;
+        wxBitmapButton* BitmapButton5;
+        wxBitmapButton* BitmapButton6;
+        wxBitmapButton* BitmapButton7;
+        wxBitmapButton* BitmapButton8;
+        wxBitmapButton* card_1_button;
+        wxBitmapButton* card_5_button;
         wxBitmapButton* col_12_button;
         wxBitmapButton* col_1_button;
         wxBitmapButton* col_2_button;
         wxBitmapButton* col_34_button;
         wxBitmapButton* col_3_button;
         wxBitmapButton* col_4_button;
+        wxBitmapButton* row_12_button;
+        wxBitmapButton* row_1_button;
+        wxBitmapButton* row_2_button;
         wxStaticBitmap* payoutImage;
         wxStatusBar* StatusBar1;
         //*)

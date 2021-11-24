@@ -23,7 +23,10 @@
 					<Add option="-s" />
 					<Add library="libwxmsw30u_core.a" />
 					<Add library="libwxbase30u.a" />
+					<Add library="C:/wxWidgets-3.0.5/lib/gcc_lib/libwxjpeg.a" />
+					<Add library="C:/wxWidgets-3.0.5/lib/gcc_lib/libwxtiff.a" />
 					<Add library="libwxpng.a" />
+					<Add library="C:/wxWidgets-3.0.5/lib/gcc_lib/libwxregexu.a" />
 					<Add library="libwxzlib.a" />
 					<Add directory="C:/wxWidgets-3.0.5/lib/gcc_lib" />
 				</Linker>
@@ -61,9 +64,21 @@
 		<Unit filename="CardFlipApp.h" />
 		<Unit filename="CardFlipMain.cpp" />
 		<Unit filename="CardFlipMain.h" />
+		<Unit filename="include/Bet.h" />
+		<Unit filename="include/BetIterator.h" />
+		<Unit filename="include/Betters.h" />
+		<Unit filename="include/Card.h" />
+		<Unit filename="include/CardFlip.h" />
+		<Unit filename="include/Deck.h" />
+		<Unit filename="include/DeckIterator.h" />
+		<Unit filename="include/Iterator.h" />
+		<Unit filename="include/Player.h" />
 		<Unit filename="resource.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="src/Betters.cpp" />
+		<Unit filename="src/CardFlip.cpp" />
+		<Unit filename="src/Player.cpp" />
 		<Unit filename="wxsmith/CardFlipframe.wxs" />
 		<Extensions>
 			<code_completion />
