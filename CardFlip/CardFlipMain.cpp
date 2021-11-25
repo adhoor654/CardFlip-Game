@@ -7,6 +7,7 @@
  * License:
  **************************************************************/
 
+#include "images/ImageHeader.h"
 #include "CardFlipMain.h"
 #include <wx/msgdlg.h>
 
@@ -62,6 +63,17 @@ const long CardFlipFrame::ID_BITMAPBUTTON14 = wxNewId();
 const long CardFlipFrame::ID_BITMAPBUTTON15 = wxNewId();
 const long CardFlipFrame::ID_BITMAPBUTTON16 = wxNewId();
 const long CardFlipFrame::ID_BITMAPBUTTON17 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON18 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON19 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON20 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON21 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON22 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON23 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON24 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON25 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON26 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON27 = wxNewId();
+const long CardFlipFrame::ID_BITMAPBUTTON28 = wxNewId();
 const long CardFlipFrame::idMenuQuit = wxNewId();
 const long CardFlipFrame::idMenuAbout = wxNewId();
 const long CardFlipFrame::ID_STATUSBAR1 = wxNewId();
@@ -74,9 +86,6 @@ END_EVENT_TABLE()
 
 CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
 {
-    wxBitmap row_12, row_12_pressed;
-    row_12.LoadFile("row_1-2.bmp", wxBITMAP_TYPE_BMP);
-    row_12_pressed.LoadFile("row_1-2_pressed.bmp", wxBITMAP_TYPE_BMP);
     //(*Initialize(CardFlipFrame)
     wxBoxSizer* cardSizer;
     wxBoxSizer* colSizer1;
@@ -175,16 +184,38 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     leftSizer->Add(secondSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer = new wxBoxSizer(wxHORIZONTAL);
     thirdSizer1 = new wxBoxSizer(wxHORIZONTAL);
+    BitmapButton2 = new wxBitmapButton(this, ID_BITMAPBUTTON18, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON18"));
+    thirdSizer1->Add(BitmapButton2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer1, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    thirdSizer2 = new wxBoxSizer(wxHORIZONTAL);
+    thirdSizer2 = new wxBoxSizer(wxVERTICAL);
+    BitmapButton3 = new wxBitmapButton(this, ID_BITMAPBUTTON19, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON19"));
+    thirdSizer2->Add(BitmapButton3, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BitmapButton9 = new wxBitmapButton(this, ID_BITMAPBUTTON20, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON20"));
+    thirdSizer2->Add(BitmapButton9, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer2, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    thirdSizer3 = new wxBoxSizer(wxHORIZONTAL);
+    thirdSizer3 = new wxBoxSizer(wxVERTICAL);
+    BitmapButton10 = new wxBitmapButton(this, ID_BITMAPBUTTON21, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON21"));
+    thirdSizer3->Add(BitmapButton10, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BitmapButton11 = new wxBitmapButton(this, ID_BITMAPBUTTON22, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON22"));
+    thirdSizer3->Add(BitmapButton11, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer3, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    thirdSizer4 = new wxBoxSizer(wxHORIZONTAL);
+    thirdSizer4 = new wxBoxSizer(wxVERTICAL);
+    BitmapButton12 = new wxBitmapButton(this, ID_BITMAPBUTTON23, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON23"));
+    thirdSizer4->Add(BitmapButton12, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BitmapButton13 = new wxBitmapButton(this, ID_BITMAPBUTTON24, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON24"));
+    thirdSizer4->Add(BitmapButton13, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    thirdSizer5 = new wxBoxSizer(wxHORIZONTAL);
+    thirdSizer5 = new wxBoxSizer(wxVERTICAL);
+    BitmapButton14 = new wxBitmapButton(this, ID_BITMAPBUTTON25, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON25"));
+    thirdSizer5->Add(BitmapButton14, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BitmapButton15 = new wxBitmapButton(this, ID_BITMAPBUTTON26, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON26"));
+    thirdSizer5->Add(BitmapButton15, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer5, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    thirdSizer6 = new wxBoxSizer(wxHORIZONTAL);
+    thirdSizer6 = new wxBoxSizer(wxVERTICAL);
+    BitmapButton16 = new wxBitmapButton(this, ID_BITMAPBUTTON27, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON27"));
+    thirdSizer6->Add(BitmapButton16, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    BitmapButton17 = new wxBitmapButton(this, ID_BITMAPBUTTON28, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxBU_AUTODRAW, wxDefaultValidator, _T("ID_BITMAPBUTTON28"));
+    thirdSizer6->Add(BitmapButton17, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     thirdSizer->Add(thirdSizer6, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     leftSizer->Add(thirdSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     fourthSizer = new wxBoxSizer(wxHORIZONTAL);
@@ -218,11 +249,15 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     outerSizer->Fit(this);
     outerSizer->SetSizeHints(this);
 
+    Connect(ID_BITMAPBUTTON11,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&CardFlipFrame::Oncard_5_buttonClick);
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&CardFlipFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&CardFlipFrame::OnAbout);
     //*)
-    row_12_button->SetBitmap(row_12);
-    row_12_button->SetBitmapSelected(row_12_pressed);
+
+    wxBitmap col_12(col12, wxBITMAP_TYPE_XPM);
+    wxBitmap col_12_pressed(col12_pressed, wxBITMAP_TYPE_XPM);
+    col_12_button->SetBitmap(col_12);
+    col_12_button->SetBitmapSelected(col_12_pressed);
 }
 
 CardFlipFrame::~CardFlipFrame()
@@ -240,4 +275,8 @@ void CardFlipFrame::OnAbout(wxCommandEvent& event)
 {
     wxString msg = wxbuildinfo(long_f);
     wxMessageBox(msg, _("Welcome to..."));
+}
+
+void CardFlipFrame::Oncard_5_buttonClick(wxCommandEvent& event)
+{
 }

@@ -31,6 +31,7 @@ class CardFlipFrame: public wxFrame
         //(*Handlers(CardFlipFrame)
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
+        void Oncard_5_buttonClick(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(CardFlipFrame)
@@ -52,18 +53,40 @@ class CardFlipFrame: public wxFrame
         static const long ID_BITMAPBUTTON15;
         static const long ID_BITMAPBUTTON16;
         static const long ID_BITMAPBUTTON17;
+        static const long ID_BITMAPBUTTON18;
+        static const long ID_BITMAPBUTTON19;
+        static const long ID_BITMAPBUTTON20;
+        static const long ID_BITMAPBUTTON21;
+        static const long ID_BITMAPBUTTON22;
+        static const long ID_BITMAPBUTTON23;
+        static const long ID_BITMAPBUTTON24;
+        static const long ID_BITMAPBUTTON25;
+        static const long ID_BITMAPBUTTON26;
+        static const long ID_BITMAPBUTTON27;
+        static const long ID_BITMAPBUTTON28;
         static const long idMenuQuit;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
         //*)
 
         //(*Declarations(CardFlipFrame)
+        wxBitmapButton* BitmapButton10;
+        wxBitmapButton* BitmapButton11;
+        wxBitmapButton* BitmapButton12;
+        wxBitmapButton* BitmapButton13;
+        wxBitmapButton* BitmapButton14;
+        wxBitmapButton* BitmapButton15;
+        wxBitmapButton* BitmapButton16;
+        wxBitmapButton* BitmapButton17;
         wxBitmapButton* BitmapButton1;
+        wxBitmapButton* BitmapButton2;
+        wxBitmapButton* BitmapButton3;
         wxBitmapButton* BitmapButton4;
         wxBitmapButton* BitmapButton5;
         wxBitmapButton* BitmapButton6;
         wxBitmapButton* BitmapButton7;
         wxBitmapButton* BitmapButton8;
+        wxBitmapButton* BitmapButton9;
         wxBitmapButton* card_1_button;
         wxBitmapButton* card_5_button;
         wxBitmapButton* col_12_button;
