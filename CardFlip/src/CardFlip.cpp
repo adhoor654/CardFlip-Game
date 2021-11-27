@@ -37,24 +37,25 @@ int CardFlip::getRound() {
 //since playRound increments the round count and draws a card
 //you need to get the round and the card before calling playRound
 //or else the deckIterator will go out of bounds after the last round
-bool CardFlip::playRound(int betCode) {
+pair<bool,bool> CardFlip::playRound(int betCode) {
     user.useBetCode(betCode);
-    cout << "Player is ";
-    user.printBet();
+    //cout << "Player is ";
+    //user.printBet();
 
     computer.placeBet(deck.createIterator(), round-1);
-    cout << "Computer is ";
-    computer.printBet();
+    //cout << "Computer is ";
+    //computer.printBet();
 
     Card drawnCard = deckIt.current();
 
-    bool playerWon = user.resolveBet(drawnCard);
-    computer.resolveBet(drawnCard);
+    pair<bool,bool> winStatus;
+    winStatus.first = user.resolveBet(drawnCard);
+    winStatus.second = computer.resolveBet(drawnCard);
 
     deckIt.next();
     round++;
 
-    return playerWon;
+    return winStatus;
 }
 
 pair<int, int> CardFlip::getScores() {

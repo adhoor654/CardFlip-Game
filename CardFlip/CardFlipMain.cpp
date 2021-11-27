@@ -347,8 +347,7 @@ void CardFlipFrame::setImages() {
     wxBitmap payout_info(payoutinfo, wxBITMAP_TYPE_XPM);
     payoutImage->SetBitmap(payout_info);
 
-    wxBitmap card_blank(cardblank, wxBITMAP_TYPE_XPM);
-    card_display->SetBitmap(card_blank);
+    cardImages.push_back(wxBitmap(cardblank, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card1, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card2, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card3, wxBITMAP_TYPE_XPM));
@@ -373,6 +372,8 @@ void CardFlipFrame::setImages() {
     cardImages.push_back(wxBitmap(card22, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card23, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card24, wxBITMAP_TYPE_XPM));
+
+    card_display->SetBitmap(cardImages[0]);
 
     wxBitmap col12_(col12, wxBITMAP_TYPE_XPM);
     wxBitmap col12_pressed(col12pressed, wxBITMAP_TYPE_XPM);
@@ -507,7 +508,6 @@ void CardFlipFrame::setImages() {
 }
 
 void CardFlipFrame::bindButtons() {
-    //card_5_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_5_buttonClick, this);
     col_12_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_12_buttonClick, this);
     col_34_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_34_buttonClick, this);
     col_1_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_1_buttonClick, this);
@@ -575,6 +575,7 @@ void CardFlipFrame::setRoundLabel(wxString str) {
 }
 
 void CardFlipFrame::setBetLabel(wxString str) {
+    unboldLabels();
     yourBetLabel->SetLabelText("Your bet: " + str);
 }
 void CardFlipFrame::setCPUBetLabel(wxString str) {
@@ -593,6 +594,24 @@ void CardFlipFrame::setScore(wxString str) {
 }
 void CardFlipFrame::setCPUScore(wxString str) {
     theirScoreLabel->SetLabelText("Score: " + str);
+}
+
+void CardFlipFrame::boldLabels() {
+    yourBetLabel->SetFont(yourBetLabel->GetFont().MakeBold());
+}
+void CardFlipFrame::boldCPULabels() {
+    theirBetLabel->SetFont(theirBetLabel->GetFont().MakeBold());
+}
+
+void CardFlipFrame::unboldLabels() {
+    wxFont font = yourBetLabel->GetFont();
+    font.SetWeight(wxFONTWEIGHT_NORMAL);
+    yourBetLabel->SetFont(font);
+}
+void CardFlipFrame::unboldCPULabels() {
+    wxFont font = theirBetLabel->GetFont();
+    font.SetWeight(wxFONTWEIGHT_NORMAL);
+    theirBetLabel->SetFont(font);
 }
 
 void CardFlipFrame::updateCPUBet(pair<int,int> info) {
@@ -818,9 +837,22 @@ void CardFlipFrame::Ondraw_card_buttonClick(wxCommandEvent& event) {
             setRoundLabel(wxString::Format(wxT("%i"),round));
         int cardID = game->getCard().getID();
         updateCardDisplay(cardID);
-        game->playRound(betCode);
+        pair<bool,bool> winStatus = game->playRound(betCode);
+        if (winStatus.first)    boldLabels(); //player's bet was correct
+        else                    unboldLabels();
+        if (winStatus.second)   boldCPULabels(); //computer's bet was correct
+        else                    unboldCPULabels();
         updateCPUBet(game->getCPUBetInfo());
         updateScores();
+
+        /* for debug
+        pair<int,int> temp = game->getCPUBetInfo();
+        msg += wxString::Format(wxT("\nPlayer bet: %i"), betCode);
+        msg += wxString::Format(wxT("\nComputer bet: %i"), temp.first);
+        if(winStatus.first)  msg += "\nPlayer won!";
+        if(winStatus.second) msg += "\nComputer won!";
+        wxMessageBox(msg, _("  This round"));*/
+
     }
     else {
         wxString msg = "Each game is only 12 rounds. Start a new game\nfrom the menu to keep playing.";

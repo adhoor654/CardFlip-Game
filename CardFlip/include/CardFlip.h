@@ -14,7 +14,7 @@ class CardFlip {
         CardFlip(int difficulty);
         void reset(int difficulty);
         int getRound();
-        bool playRound(int betCode);
+        pair<bool,bool> playRound(int betCode);
         pair<int, int> getScores();
         Card getCard();
         pair<int, int> getCPUBetInfo(); //returns betCode and payout

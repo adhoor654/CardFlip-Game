@@ -171,6 +171,12 @@ class CardFlipFrame: public wxFrame
     void setScore(wxString str);
     void setCPUScore(wxString str);
 
+    void boldLabels();
+    void boldCPULabels();
+
+    void unboldLabels();
+    void unboldCPULabels();
+
     void updateCPUBet(pair<int,int> info);
     void updateScores();
 
