@@ -298,7 +298,7 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     card_display->SetMinSize(wxSize(100,100));
     card_display->SetMaxSize(wxSize(100,100));
     cardSizer->Add(card_display, 1, wxALL|wxEXPAND|wxFIXED_MINSIZE, 10);
-    roundLabel = new wxStaticText(this, ID_STATICTEXT7, _("Round  #"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT7"));
+    roundLabel = new wxStaticText(this, ID_STATICTEXT7, _("Round ##"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT7"));
     cardSizer->Add(roundLabel, 1, wxALL|wxALIGN_CENTER_HORIZONTAL, 5);
     rightSizer->Add(cardSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     cpuBoxSizer = new wxStaticBoxSizer(wxVERTICAL, this, _("CPU"));
@@ -454,6 +454,51 @@ void CardFlipFrame::setImages() {
     card_10_button->SetBitmap(b10_);
     card_10_button->SetBitmapSelected(b10_pressed);
 
+    wxBitmap row12_(row12, wxBITMAP_TYPE_XPM);
+    wxBitmap row12_pressed(row12pressed, wxBITMAP_TYPE_XPM);
+    row_12_button->SetBitmap(row12_);
+    row_12_button->SetBitmapSelected(row12_pressed);
+
+    wxBitmap row34_(row34, wxBITMAP_TYPE_XPM);
+    wxBitmap row34_pressed(row34pressed, wxBITMAP_TYPE_XPM);
+    row_34_button->SetBitmap(row34_);
+    row_34_button->SetBitmapSelected(row34_pressed);
+
+    wxBitmap row56_(row56, wxBITMAP_TYPE_XPM);
+    wxBitmap row56_pressed(row56pressed, wxBITMAP_TYPE_XPM);
+    row_56_button->SetBitmap(row56_);
+    row_56_button->SetBitmapSelected(row56_pressed);
+
+    wxBitmap row1_(row1, wxBITMAP_TYPE_XPM);
+    wxBitmap row1_pressed(row1pressed, wxBITMAP_TYPE_XPM);
+    row_1_button->SetBitmap(row1_);
+    row_1_button->SetBitmapSelected(row1_pressed);
+
+    wxBitmap row2_(row2, wxBITMAP_TYPE_XPM);
+    wxBitmap row2_pressed(row2pressed, wxBITMAP_TYPE_XPM);
+    row_2_button->SetBitmap(row2_);
+    row_2_button->SetBitmapSelected(row2_pressed);
+
+    wxBitmap row3_(row3, wxBITMAP_TYPE_XPM);
+    wxBitmap row3_pressed(row3pressed, wxBITMAP_TYPE_XPM);
+    row_3_button->SetBitmap(row3_);
+    row_3_button->SetBitmapSelected(row3_pressed);
+
+    wxBitmap row4_(row4, wxBITMAP_TYPE_XPM);
+    wxBitmap row4_pressed(row4pressed, wxBITMAP_TYPE_XPM);
+    row_4_button->SetBitmap(row4_);
+    row_4_button->SetBitmapSelected(row4_pressed);
+
+    wxBitmap row5_(row5, wxBITMAP_TYPE_XPM);
+    wxBitmap row5_pressed(row5pressed, wxBITMAP_TYPE_XPM);
+    row_5_button->SetBitmap(row5_);
+    row_5_button->SetBitmapSelected(row5_pressed);
+
+    wxBitmap row6_(row6, wxBITMAP_TYPE_XPM);
+    wxBitmap row6_pressed(row6pressed, wxBITMAP_TYPE_XPM);
+    row_6_button->SetBitmap(row6_);
+    row_6_button->SetBitmapSelected(row6_pressed);
+
     wxBitmap drawcard_(drawcard, wxBITMAP_TYPE_XPM);
     wxBitmap drawcard_pressed(drawcardpressed, wxBITMAP_TYPE_XPM);
     draw_card_button->SetBitmap(drawcard_);
@@ -469,6 +514,7 @@ void CardFlipFrame::bindButtons() {
     col_2_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_2_buttonClick, this);
     col_3_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_3_buttonClick, this);
     col_4_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncol_4_buttonClick, this);
+
     card_1_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_1_buttonClick, this);
     card_2_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_2_buttonClick, this);
     card_3_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_3_buttonClick, this);
@@ -493,6 +539,16 @@ void CardFlipFrame::bindButtons() {
     card_22_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_22_buttonClick, this);
     card_23_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_23_buttonClick, this);
     card_24_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Oncard_24_buttonClick, this);
+
+    row_12_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_12_buttonClick, this);
+    row_34_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_34_buttonClick, this);
+    row_56_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_56_buttonClick, this);
+    row_1_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_1_buttonClick, this);
+    row_2_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_2_buttonClick, this);
+    row_3_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_3_buttonClick, this);
+    row_4_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_4_buttonClick, this);
+    row_5_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_5_buttonClick, this);
+    row_6_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Onrow_6_buttonClick, this);
 
     draw_card_button->Bind(wxEVT_BUTTON, &CardFlipFrame::Ondraw_card_buttonClick, this);
 }
@@ -705,6 +761,52 @@ void CardFlipFrame::Oncard_24_buttonClick(wxCommandEvent& event){
     betCode = 24;
     setBetLabel("Purple diamond");
     setPayoutLabel("24");
+}
+
+void CardFlipFrame::Onrow_12_buttonClick(wxCommandEvent& event){
+    betCode = 35;
+    setBetLabel(betNames[35]);
+    setPayoutLabel("3");
+}
+void CardFlipFrame::Onrow_34_buttonClick(wxCommandEvent& event){
+    betCode = 36;
+    setBetLabel(betNames[36]);
+    setPayoutLabel("3");
+}
+void CardFlipFrame::Onrow_56_buttonClick(wxCommandEvent& event){
+    betCode = 37;
+    setBetLabel(betNames[37]);
+    setPayoutLabel("3");
+}
+void CardFlipFrame::Onrow_1_buttonClick(wxCommandEvent& event){
+    betCode = 25;
+    setBetLabel(betNames[25]);
+    setPayoutLabel("6");
+}
+void CardFlipFrame::Onrow_2_buttonClick(wxCommandEvent& event){
+    betCode = 26;
+    setBetLabel(betNames[26]);
+    setPayoutLabel("6");
+}
+void CardFlipFrame::Onrow_3_buttonClick(wxCommandEvent& event){
+    betCode = 27;
+    setBetLabel(betNames[27]);
+    setPayoutLabel("6");
+}
+void CardFlipFrame::Onrow_4_buttonClick(wxCommandEvent& event){
+    betCode = 28;
+    setBetLabel(betNames[28]);
+    setPayoutLabel("6");
+}
+void CardFlipFrame::Onrow_5_buttonClick(wxCommandEvent& event){
+    betCode = 29;
+    setBetLabel(betNames[29]);
+    setPayoutLabel("6");
+}
+void CardFlipFrame::Onrow_6_buttonClick(wxCommandEvent& event){
+    betCode = 30;
+    setBetLabel(betNames[30]);
+    setPayoutLabel("6");
 }
 
 void CardFlipFrame::Ondraw_card_buttonClick(wxCommandEvent& event) {

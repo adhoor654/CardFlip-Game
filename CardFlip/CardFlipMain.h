@@ -185,6 +185,7 @@ class CardFlipFrame: public wxFrame
     void Oncol_2_buttonClick(wxCommandEvent& event);
     void Oncol_3_buttonClick(wxCommandEvent& event);
     void Oncol_4_buttonClick(wxCommandEvent& event);
+
     void Oncard_1_buttonClick(wxCommandEvent& event);
     void Oncard_2_buttonClick(wxCommandEvent& event);
     void Oncard_3_buttonClick(wxCommandEvent& event);
@@ -209,6 +210,16 @@ class CardFlipFrame: public wxFrame
     void Oncard_22_buttonClick(wxCommandEvent& event);
     void Oncard_23_buttonClick(wxCommandEvent& event);
     void Oncard_24_buttonClick(wxCommandEvent& event);
+
+    void Onrow_12_buttonClick(wxCommandEvent& event);
+    void Onrow_34_buttonClick(wxCommandEvent& event);
+    void Onrow_56_buttonClick(wxCommandEvent& event);
+    void Onrow_1_buttonClick(wxCommandEvent& event);
+    void Onrow_2_buttonClick(wxCommandEvent& event);
+    void Onrow_3_buttonClick(wxCommandEvent& event);
+    void Onrow_4_buttonClick(wxCommandEvent& event);
+    void Onrow_5_buttonClick(wxCommandEvent& event);
+    void Onrow_6_buttonClick(wxCommandEvent& event);
 
     void Ondraw_card_buttonClick(wxCommandEvent& event);
         DECLARE_EVENT_TABLE()

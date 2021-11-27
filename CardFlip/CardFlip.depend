@@ -1690,7 +1690,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\univ\theme.h
 	"wx/string.h"
 
-1638012871 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+1638015667 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
 	"include/CardFlip.h"
 	"images/ImageHeader.h"
 	<wx/bmpbuttn.h>
@@ -2110,7 +2110,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\os2\stattext.h
 	"wx/control.h"
 
-1638013363 c:\users\drizi\documents\github\cardflip-game\cardflip\images\imageheader.h
+1638015868 c:\users\drizi\documents\github\cardflip-game\cardflip\images\imageheader.h
 	"payout_info.xpm"
 	"icon.xpm"
 	"draw_card.xpm"
@@ -2170,6 +2170,15 @@
 	"col_2_pressed.xpm"
 	"col_3_pressed.xpm"
 	"col_4_pressed.xpm"
+	"row_1-2_pressed.xpm"
+	"row_3-4_pressed.xpm"
+	"row_5-6_pressed.xpm"
+	"row_1_pressed.xpm"
+	"row_2_pressed.xpm"
+	"row_3_pressed.xpm"
+	"row_4_pressed.xpm"
+	"row_5_pressed.xpm"
+	"row_6_pressed.xpm"
 	"card_blank.xpm"
 	"card_1.xpm"
 	"card_2.xpm"
@@ -2361,4 +2370,22 @@
 1637805194 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_23.xpm
 
 1638013304 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_24.xpm
+
+1638016012 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_1-2_pressed.xpm
+
+1638016084 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_3-4_pressed.xpm
+
+1638016055 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_5-6_pressed.xpm
+
+1638015898 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_1_pressed.xpm
+
+1638016023 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_2_pressed.xpm
+
+1638016030 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_3_pressed.xpm
+
+1638016077 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_4_pressed.xpm
+
+1638016069 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_5_pressed.xpm
+
+1638016046 c:\users\drizi\documents\github\cardflip-game\cardflip\images\row_6_pressed.xpm
 
