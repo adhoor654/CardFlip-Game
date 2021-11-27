@@ -65,3 +65,8 @@ pair<int, int> CardFlip::getScores() {
 Card CardFlip::getCard() {
     return deckIt.current();
 }
+
+pair<int, int> CardFlip::getCPUBetInfo() {
+    pair<int,int> info(computer.getBetCode(), computer.getPayout());
+    return info;
+}

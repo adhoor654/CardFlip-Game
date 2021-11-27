@@ -18,6 +18,7 @@ class Player {
     bool resolveBet(Card card);
     int getScore();
     int getPayout();
+    int getBetCode();
     void printBet();
 };
 

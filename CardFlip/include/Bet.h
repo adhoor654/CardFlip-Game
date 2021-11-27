@@ -11,6 +11,7 @@ class Bet {
 private:
     vector<Card> cards;
     int payout;
+    int betCode;
 
 public:
     bool isEmpty() {
@@ -48,6 +49,7 @@ public:
 	}
 
 	void reset() {
+	    betCode = 0;
 	    while (!cards.empty()) {
             cards.pop_back();
         }
@@ -59,6 +61,14 @@ public:
 
     void setPayout(int num) {
         payout = num;
+    }
+
+    int getBetCode() {
+        return betCode;
+    }
+
+    void setBetCode(int num) {
+        betCode = num;
     }
 
 	BetIterator createIterator() {

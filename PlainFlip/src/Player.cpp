@@ -26,6 +26,7 @@ void Player::placeBet(DeckIterator deckIt, int roundMinusOne) {
 //Note: if your betCode is invalid, your Bet will be empty
 void Player::useBetCode(int betCode) {
     bet.reset(); //make sure the bet is empty
+    bet.setBetCode(betCode);
     if (1 <= betCode && betCode <= 24) {
         bet.addSingleCard(betCode); //add the card numbered 1 - 24
         bet.setPayout(24);
@@ -87,6 +88,10 @@ int Player::getScore() {
 
 int Player::getPayout() {
     return bet.getPayout();
+}
+
+int Player::getBetCode() {
+    return bet.getBetCode();
 }
 
 void Player::printBet() {

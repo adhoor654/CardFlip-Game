@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="CardFlipFrame">
+		<bg>#E2E2E9</bg>
+		<id_arg>0</id_arg>
 		<object class="wxBoxSizer" variable="outerSizer" member="no">
 			<object class="sizeritem">
 				<object class="wxBoxSizer" variable="leftSizer" member="no">
@@ -8,9 +10,7 @@
 					<object class="sizeritem">
 						<object class="wxBoxSizer" variable="firstSizer" member="no">
 							<object class="sizeritem">
-								<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="payoutImage" member="yes">
-									<bitmap>C:\Users\drizi\Documents\GitHub\CardFlip-Game\CardFlip\images\payout_info.png</bitmap>
-								</object>
+								<object class="wxStaticBitmap" name="ID_STATICBITMAP1" variable="payoutImage" member="yes" />
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
@@ -107,6 +107,7 @@
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
 										<option>1</option>
 									</object>
 								</object>
@@ -166,13 +167,17 @@
 								<object class="wxBoxSizer" variable="secondSizer4" member="no">
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON12" variable="BitmapButton1" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON12" variable="card_2_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
 									</object>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON13" variable="BitmapButton4" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON13" variable="card_6_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
@@ -186,13 +191,17 @@
 								<object class="wxBoxSizer" variable="secondSizer5" member="no">
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON14" variable="BitmapButton5" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON14" variable="card_3_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
 									</object>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON15" variable="BitmapButton6" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON15" variable="card_7_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
@@ -206,13 +215,17 @@
 								<object class="wxBoxSizer" variable="secondSizer6" member="no">
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON16" variable="BitmapButton7" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON16" variable="card_4_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
 									</object>
 									<object class="sizeritem">
-										<object class="wxBitmapButton" name="ID_BITMAPBUTTON17" variable="BitmapButton8" member="yes" />
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON17" variable="card_8_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
@@ -230,37 +243,136 @@
 					<object class="sizeritem">
 						<object class="wxBoxSizer" variable="thirdSizer" member="no">
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer1" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer1" member="no">
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON19" variable="row_34_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer2" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer2" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON20" variable="row_3_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON21" variable="row_4_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer3" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer3" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON22" variable="card_9_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON23" variable="card_13_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer4" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer4" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON24" variable="card_10_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON25" variable="card_14_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer5" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer5" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON26" variable="card_11_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON27" variable="card_15_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 							<object class="sizeritem">
-								<object class="wxBoxSizer" variable="thirdSizer6" member="no" />
+								<object class="wxBoxSizer" variable="thirdSizer6" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON28" variable="card_12_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON29" variable="card_16_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
 								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 								<border>5</border>
 								<option>1</option>
@@ -271,7 +383,143 @@
 						<option>1</option>
 					</object>
 					<object class="sizeritem">
-						<object class="wxBoxSizer" variable="fourthSizer" member="no" />
+						<object class="wxBoxSizer" variable="fourthSizer" member="no">
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer1" member="no">
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON30" variable="row_56_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer2" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON31" variable="row_5_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON32" variable="row_6_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer3" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON33" variable="card_17_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON34" variable="card_21_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer4" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON36" variable="card_18_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON35" variable="card_22_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer5" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON37" variable="card_19_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON38" variable="card_23_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxBoxSizer" variable="fourthSizer6" member="no">
+									<orient>wxVERTICAL</orient>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON39" variable="card_20_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+									<object class="sizeritem">
+										<object class="wxBitmapButton" name="ID_BITMAPBUTTON40" variable="card_24_button" member="yes">
+											<style>wxNO_BORDER</style>
+										</object>
+										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<border>5</border>
+										<option>1</option>
+									</object>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
 						<option>1</option>
@@ -286,23 +534,93 @@
 					<orient>wxVERTICAL</orient>
 					<object class="sizeritem">
 						<object class="wxStaticBoxSizer" variable="youBoxSizer" member="no">
-							<label>Label</label>
+							<label>YOU</label>
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT1" variable="yourBetLabel" member="yes">
+									<label>Your bet:</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT2" variable="yourPayoutLabel" member="yes">
+									<label>Payout:</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT3" variable="yourScoreLabel" member="yes">
+									<label>Score: 0</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
 					<object class="sizeritem">
-						<object class="wxBoxSizer" variable="cardSizer" member="no" />
+						<object class="wxBoxSizer" variable="cardSizer" member="no">
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<object class="wxBitmapButton" name="ID_BITMAPBUTTON18" variable="draw_card_button" member="yes">
+									<minsize>110,50</minsize>
+									<maxsize>110,50</maxsize>
+									<style>wxNO_BORDER</style>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="card_display" member="yes">
+									<style>wxNO_BORDER</style>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
 					<object class="sizeritem">
 						<object class="wxStaticBoxSizer" variable="cpuBoxSizer" member="no">
-							<label>Label</label>
+							<label>CPU</label>
+							<orient>wxVERTICAL</orient>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT4" variable="theirBetLabel" member="yes">
+									<label>Their bet:</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT5" variable="theirPayoutLabel" member="yes">
+									<label>Payout:</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT6" variable="theirScoreLabel" member="yes">
+									<label>Score: 0</label>
+								</object>
+								<flag>wxALL|wxALIGN_LEFT</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>

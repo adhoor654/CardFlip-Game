@@ -17,6 +17,7 @@ class CardFlip {
         bool playRound(int betCode);
         pair<int, int> getScores();
         Card getCard();
+        pair<int, int> getCPUBetInfo(); //returns betCode and payout
 };
 
 #endif // CARDFLIP_H

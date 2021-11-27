@@ -1,5 +1,5 @@
 /* XPM */
-static char *col12_pressed[] = {
+static char *col12pressed[] = {
 /* columns rows colors chars-per-pixel */
 "110 50 3 1 ",
 "  c gray24",

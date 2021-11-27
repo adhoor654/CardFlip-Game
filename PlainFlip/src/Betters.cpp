@@ -11,6 +11,7 @@ Bet SimpleBetter::placeBet(DeckIterator deckIt, int n) {
     if (betType == 0) { //we'll choose two columns
         bet.setPayout(2);
         betType = rand() % 2; //gives [0,1]
+        bet.setBetCode(38+betType); //betCode [38,39]
 
         bet.addCardCol(2*betType+1);   //add column 1/3
         bet.addCardCol(2*(betType+1)); //add column 2/4
@@ -18,6 +19,7 @@ Bet SimpleBetter::placeBet(DeckIterator deckIt, int n) {
     else if(betType == 1) { //we'll choose two rows
         bet.setPayout(3);
         betType = rand() % 3; //gives [0,2]
+        bet.setBetCode(35+betType); //betCode [35,37]
 
         bet.addCardRow(2*betType+1);   //add row 1/3/5
         bet.addCardRow(2*(betType+1)); //add row 2/4/6
@@ -25,6 +27,7 @@ Bet SimpleBetter::placeBet(DeckIterator deckIt, int n) {
     else { //we'll choose one column
         bet.setPayout(4);
         betType = rand() % 3 + 1; //gives [1,4]
+        bet.setBetCode(30+betType); //betCode [31,34]
 
         bet.addCardCol(betType); //add column 1/2/3/4
     }
