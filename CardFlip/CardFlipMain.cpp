@@ -87,6 +87,7 @@ const long CardFlipFrame::ID_STATICTEXT2 = wxNewId();
 const long CardFlipFrame::ID_STATICTEXT3 = wxNewId();
 const long CardFlipFrame::ID_BITMAPBUTTON18 = wxNewId();
 const long CardFlipFrame::ID_STATICBITMAP2 = wxNewId();
+const long CardFlipFrame::ID_STATICTEXT7 = wxNewId();
 const long CardFlipFrame::ID_STATICTEXT4 = wxNewId();
 const long CardFlipFrame::ID_STATICTEXT5 = wxNewId();
 const long CardFlipFrame::ID_STATICTEXT6 = wxNewId();
@@ -141,7 +142,8 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     wxStaticBoxSizer* cpuBoxSizer;
     wxStaticBoxSizer* youBoxSizer;
 
-    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    Create(parent, wxID_ANY, _("CardFlip"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    SetClientSize(wxSize(920,795));
     SetBackgroundColour(wxColour(226,226,233));
     outerSizer = new wxBoxSizer(wxHORIZONTAL);
     leftSizer = new wxBoxSizer(wxVERTICAL);
@@ -292,8 +294,12 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     draw_card_button->SetMinSize(wxSize(110,50));
     draw_card_button->SetMaxSize(wxSize(110,50));
     cardSizer->Add(draw_card_button, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    card_display = new wxStaticBitmap(this, ID_STATICBITMAP2, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxNO_BORDER, _T("ID_STATICBITMAP2"));
-    cardSizer->Add(card_display, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    card_display = new wxStaticBitmap(this, ID_STATICBITMAP2, wxNullBitmap, wxDefaultPosition, wxSize(100,100), wxNO_BORDER, _T("ID_STATICBITMAP2"));
+    card_display->SetMinSize(wxSize(100,100));
+    card_display->SetMaxSize(wxSize(100,100));
+    cardSizer->Add(card_display, 1, wxALL|wxEXPAND|wxFIXED_MINSIZE, 10);
+    roundLabel = new wxStaticText(this, ID_STATICTEXT7, _("Round  #"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT7"));
+    cardSizer->Add(roundLabel, 1, wxALL|wxALIGN_CENTER_HORIZONTAL, 5);
     rightSizer->Add(cardSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     cpuBoxSizer = new wxStaticBoxSizer(wxVERTICAL, this, _("CPU"));
     theirBetLabel = new wxStaticText(this, ID_STATICTEXT4, _("Their bet:"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT4"));
@@ -315,18 +321,22 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     Menu2->Append(MenuItem2);
     MenuBar1->Append(Menu2, _("Help"));
     SetMenuBar(MenuBar1);
-    StatusBar1 = new wxStatusBar(this, ID_STATUSBAR1, 0, _T("ID_STATUSBAR1"));
+    statusBar = new wxStatusBar(this, ID_STATUSBAR1, 0, _T("ID_STATUSBAR1"));
     int __wxStatusBarWidths_1[1] = { -1 };
     int __wxStatusBarStyles_1[1] = { wxSB_NORMAL };
-    StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
-    StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
-    SetStatusBar(StatusBar1);
-    outerSizer->Fit(this);
-    outerSizer->SetSizeHints(this);
+    statusBar->SetFieldsCount(1,__wxStatusBarWidths_1);
+    statusBar->SetStatusStyles(1,__wxStatusBarStyles_1);
+    SetStatusBar(statusBar);
+    SetSizer(outerSizer);
+    Layout();
 
     Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&CardFlipFrame::OnQuit);
     Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&CardFlipFrame::OnAbout);
     //*)
+    //wxBitmap frameIcon(bicon, wxBITMAP_TYPE_XPM);
+    //const wxIcon *frameIcon = new wxIcon(bicon);
+    SetIcon(bicon);
+
     setImages();
     bindButtons();
 
@@ -339,7 +349,30 @@ void CardFlipFrame::setImages() {
 
     wxBitmap card_blank(cardblank, wxBITMAP_TYPE_XPM);
     card_display->SetBitmap(card_blank);
+    cardImages.push_back(wxBitmap(card1, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card2, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card3, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card4, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card5, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card6, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card7, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card8, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card9, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card10, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card11, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card12, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card13, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card14, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card15, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card16, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card17, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card18, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card19, wxBITMAP_TYPE_XPM));
     cardImages.push_back(wxBitmap(card20, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card21, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card22, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card23, wxBITMAP_TYPE_XPM));
+    cardImages.push_back(wxBitmap(card24, wxBITMAP_TYPE_XPM));
 
     wxBitmap col12_(col12, wxBITMAP_TYPE_XPM);
     wxBitmap col12_pressed(col12pressed, wxBITMAP_TYPE_XPM);
@@ -481,6 +514,10 @@ void CardFlipFrame::OnAbout(wxCommandEvent& event)
     wxMessageBox(msg, _("Welcome to..."));
 }
 
+void CardFlipFrame::setRoundLabel(wxString str) {
+    roundLabel->SetLabelText("Round " + str);
+}
+
 void CardFlipFrame::setBetLabel(wxString str) {
     yourBetLabel->SetLabelText("Your bet: " + str);
 }
@@ -503,7 +540,6 @@ void CardFlipFrame::setCPUScore(wxString str) {
 }
 
 void CardFlipFrame::updateCPUBet(pair<int,int> info) {
-    //setCPUBetLabel(wxString::Format(wxT("%i"),info.first));
     setCPUBetLabel(betNames[info.first]);
     setCPUPayoutLabel(wxString::Format(wxT("%i"),info.second));
 }
@@ -515,8 +551,7 @@ void CardFlipFrame::updateScores() {
 }
 
 void CardFlipFrame::updateCardDisplay(int cardID) {
-    card_display->SetBitmap(cardImages.at(0));
-    /////////////!!!!
+    card_display->SetBitmap(cardImages.at(cardID));
 }
 
 void CardFlipFrame::Oncol_12_buttonClick(wxCommandEvent& event){
@@ -673,9 +708,20 @@ void CardFlipFrame::Oncard_24_buttonClick(wxCommandEvent& event){
 }
 
 void CardFlipFrame::Ondraw_card_buttonClick(wxCommandEvent& event) {
-    int cardID = game->getCard().getID();
-    updateCardDisplay(cardID);
-    game->playRound(betCode);
-    updateCPUBet(game->getCPUBetInfo());
-    updateScores();
+    int round = game->getRound();
+    if(round < 13) {
+        if(round<10)
+            setRoundLabel(wxString::Format(wxT(" %i"),round));
+        else
+            setRoundLabel(wxString::Format(wxT("%i"),round));
+        int cardID = game->getCard().getID();
+        updateCardDisplay(cardID);
+        game->playRound(betCode);
+        updateCPUBet(game->getCPUBetInfo());
+        updateScores();
+    }
+    else {
+        wxString msg = "Each game is only 12 rounds. Start a new game\nfrom the menu to keep playing.";
+        wxMessageBox(msg, _("  Sorry!"));
+    }
 }

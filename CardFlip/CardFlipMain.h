@@ -98,6 +98,7 @@ class CardFlipFrame: public wxFrame
         static const long ID_STATICTEXT3;
         static const long ID_BITMAPBUTTON18;
         static const long ID_STATICBITMAP2;
+        static const long ID_STATICTEXT7;
         static const long ID_STATICTEXT4;
         static const long ID_STATICTEXT5;
         static const long ID_STATICTEXT6;
@@ -149,14 +150,17 @@ class CardFlipFrame: public wxFrame
         wxBitmapButton* row_6_button;
         wxStaticBitmap* card_display;
         wxStaticBitmap* payoutImage;
+        wxStaticText* roundLabel;
         wxStaticText* theirBetLabel;
         wxStaticText* theirPayoutLabel;
         wxStaticText* theirScoreLabel;
         wxStaticText* yourBetLabel;
         wxStaticText* yourPayoutLabel;
         wxStaticText* yourScoreLabel;
-        wxStatusBar* StatusBar1;
+        wxStatusBar* statusBar;
         //*)
+
+    void setRoundLabel(wxString str);
 
     void setBetLabel(wxString str);
     void setCPUBetLabel(wxString str);

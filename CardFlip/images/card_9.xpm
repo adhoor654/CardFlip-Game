@@ -1,5 +1,5 @@
 /* XPM */
-static char *result[] = {
+static char *card9[] = {
 /* columns rows colors chars-per-pixel */
 "100 100 3 1 ",
 "  c #413801",

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1637704027 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipapp.cpp
+1638011848 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipapp.cpp
 	"CardFlipApp.h"
 	"CardFlipMain.h"
 	<wx/image.h>
@@ -1690,7 +1690,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\univ\theme.h
 	"wx/string.h"
 
-1638011263 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+1638012871 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
 	"include/CardFlip.h"
 	"images/ImageHeader.h"
 	<wx/bmpbuttn.h>
@@ -2110,7 +2110,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\os2\stattext.h
 	"wx/control.h"
 
-1638006255 c:\users\drizi\documents\github\cardflip-game\cardflip\images\imageheader.h
+1638013363 c:\users\drizi\documents\github\cardflip-game\cardflip\images\imageheader.h
 	"payout_info.xpm"
 	"icon.xpm"
 	"draw_card.xpm"
@@ -2171,7 +2171,30 @@
 	"col_3_pressed.xpm"
 	"col_4_pressed.xpm"
 	"card_blank.xpm"
+	"card_1.xpm"
+	"card_2.xpm"
+	"card_3.xpm"
+	"card_4.xpm"
+	"card_5.xpm"
+	"card_6.xpm"
+	"card_7.xpm"
+	"card_8.xpm"
+	"card_9.xpm"
+	"card_10.xpm"
+	"card_11.xpm"
+	"card_12.xpm"
+	"card_13.xpm"
+	"card_14.xpm"
+	"card_15.xpm"
+	"card_16.xpm"
+	"card_17.xpm"
+	"card_18.xpm"
+	"card_19.xpm"
 	"card_20.xpm"
+	"card_21.xpm"
+	"card_22.xpm"
+	"card_23.xpm"
+	"card_24.xpm"
 
 1637805061 c:\users\drizi\documents\github\cardflip-game\cardflip\images\payout_info.xpm
 
@@ -2292,4 +2315,50 @@
 1638005230 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_blank.xpm
 
 1637805156 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_20.xpm
+
+1638013160 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_1.xpm
+
+1638013170 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_2.xpm
+
+1638013173 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_3.xpm
+
+1638013177 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_4.xpm
+
+1638013207 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_5.xpm
+
+1638013204 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_6.xpm
+
+1638013210 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_7.xpm
+
+1638013222 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_8.xpm
+
+1638013216 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_9.xpm
+
+1638013252 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_10.xpm
+
+1638013252 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_11.xpm
+
+1638013251 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_12.xpm
+
+1638013251 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_13.xpm
+
+1638013251 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_14.xpm
+
+1638013284 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_15.xpm
+
+1638013283 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_16.xpm
+
+1638013283 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_17.xpm
+
+1638013275 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_18.xpm
+
+1638013278 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_19.xpm
+
+1637805189 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_21.xpm
+
+1638013298 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_22.xpm
+
+1637805194 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_23.xpm
+
+1638013304 c:\users\drizi\documents\github\cardflip-game\cardflip\images\card_24.xpm
 

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="CardFlipFrame">
+		<title>CardFlip</title>
+		<size>920,795</size>
 		<bg>#E2E2E9</bg>
 		<id_arg>0</id_arg>
 		<object class="wxBoxSizer" variable="outerSizer" member="no">
@@ -580,9 +582,20 @@
 							</object>
 							<object class="sizeritem">
 								<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="card_display" member="yes">
+									<size>100,100</size>
+									<minsize>100,100</minsize>
+									<maxsize>100,100</maxsize>
 									<style>wxNO_BORDER</style>
 								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<flag>wxALL|wxEXPAND|wxFIXED_MINSIZE</flag>
+								<border>10</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT7" variable="roundLabel" member="yes">
+									<label>Round #</label>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -650,7 +663,7 @@
 				</object>
 			</object>
 		</object>
-		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="statusBar" member="yes">
 			<fields>1</fields>
 			<widths>-1</widths>
 			<styles>wxSB_NORMAL</styles>
