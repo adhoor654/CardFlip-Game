@@ -93,17 +93,20 @@ int main() {
     cout << endl;
     */
 
-    CardFlip game(2);
+    CardFlip game(1);
     for (int i=0; i<12; i++) {
         cout << endl << "---ROUND " << game.getRound() << "---" << endl;
         int cardNum = game.getCard().getID();
-        bool playerWon = game.playRound(rand()% 39);
+        bool playerWon = game.playRound(rand()% 38+1);
         cout << "We drew card " << cardNum << endl;
         if (playerWon) cout << "   Player won!" << endl;
         pair<int,int>scores = game.getScores();
         cout << endl << "Current Score" << endl;
         cout << "     Player: " << scores.first << endl;
         cout << "   Computer: " << scores.second << endl;
+        pair<int,int> temp =  game.getCPUBetInfo();
+        cout << "betCode: " << temp.first << endl;
+        cout << "payout: " << temp.second << endl;
     }
 
 

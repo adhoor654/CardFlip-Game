@@ -503,8 +503,8 @@ void CardFlipFrame::setCPUScore(wxString str) {
 }
 
 void CardFlipFrame::updateCPUBet(pair<int,int> info) {
-    setCPUPayoutLabel(wxString::Format(wxT("%i"),info.first));
-    //setCPUBetLabel(cardNames[info.first]);
+    //setCPUBetLabel(wxString::Format(wxT("%i"),info.first));
+    setCPUBetLabel(betNames[info.first]);
     setCPUPayoutLabel(wxString::Format(wxT("%i"),info.second));
 }
 

@@ -96,4 +96,5 @@ int Player::getBetCode() {
 
 void Player::printBet() {
     bet.printCards();
+    cout << "(Bet code " << bet.getBetCode() << ")" << endl;
 }

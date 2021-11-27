@@ -35,13 +35,17 @@ class CardFlipFrame: public wxFrame
         int betCode;
         wxStaticText* yourBet;
         vector<wxBitmap> cardImages;
-        string cardNames[24] =
-            {"Red club", "Red spade", "Red heart", "Red diamond",
+        string betNames[40] = {"Unexpected result",
+            "Red club", "Red spade", "Red heart", "Red diamond",
             "Orange club", "Orange spade", "Orange heart", "Orange diamond",
             "Yellow club", "Yellow spade", "Yellow heart", "Yellow diamond",
             "Green club", "Green spade", "Green heart", "Green diamond",
             "Blue club", "Blue spade", "Blue heart", "Blue diamond",
-            "Purple club", "Purple spade", "Purple heart", "Purple diamond"};
+            "Purple club", "Purple spade", "Purple heart", "Purple diamond",
+            "All reds", "All oranges", "All yellows", "All greens", "All blues", "All purples",
+            "All clubs", "All spades", "All hearts", "All diamonds",
+            "All reds & oranges", "All yellows & greens", "All blues & purples",
+            "All clubs & spades", "All hearts & diamonds"};
 
         //(*Handlers(CardFlipFrame)
         void OnQuit(wxCommandEvent& event);

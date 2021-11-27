@@ -50,8 +50,9 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
         }
         random_shuffle(choices.begin(), choices.end());
 
+        int col;
         for(int k = 0; k<4; k++) { //iterate through possible columns for the bet
-            int col = choices[k];
+            col = choices[k];
 
             bet.reset(); //empty the bet to add a new column of cards (this can't go at the end or it will mess up the default bet)
             bet.addCardCol(col);
@@ -74,12 +75,14 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a column that doesn't have any used cards
+                bet.setBetCode(31+col); //betCode [31,34]
                 return bet;
             }
             //otherwise, we want to try the next column, so...
             deckIt.reset(); //we'll need to iterate through the used cards again
         }
         //if all the columns have a hole in them? just use the last bet picked (effectively random)
+        bet.setBetCode(31+col); //betCode [31,34]
         return bet;
     }
     else if(betType == 1) { //we'll choose a row
@@ -91,8 +94,9 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
         }
         random_shuffle(choices.begin(), choices.end());
 
+        int row;
         for(int k = 0; k<6; k++) { //iterate through possible rows for the bet
-            int row = choices[k];
+            row = choices[k];
 
             bet.reset(); //empty the bet to add a new row of cards (this can't go at the end or it will mess up the default bet)
             bet.addCardRow(row);
@@ -115,12 +119,14 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a row that doesn't have any used cards
+                bet.setBetCode(25+row); //betCode [25,30]
                 return bet;
             }
             //otherwise, we want to try the next row, so...
             deckIt.reset(); //we'll need to iterate through the used cards again
         }
         //if all the rows have a hole in them? just use the last bet picked (effectively random)
+        bet.setBetCode(25+row); //betCode [25,30]
         return bet;
     }
     else if (betType == 2) { //we'll choose a single card
@@ -153,12 +159,14 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a card that hasn't been used
+                bet.setBetCode(id); //betCode [25,30]
                 return bet;
             }
             //otherwise, we want to try the next card, so...
             deckIt.reset(); //we'll need to iterate through the used cards again
         }
         //it's not possible for all single cards to be used, so ideally we should never reach this spot in the code
+        bet.setBetCode(0);
         return bet;
     }
     return bet;

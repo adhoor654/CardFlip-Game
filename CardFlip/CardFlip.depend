@@ -1690,7 +1690,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\univ\theme.h
 	"wx/string.h"
 
-1638009550 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+1638011263 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
 	"include/CardFlip.h"
 	"images/ImageHeader.h"
 	<wx/bmpbuttn.h>
@@ -1802,9 +1802,7 @@
 	"wx/list.h"
 	"wx/dynarray.h"
 
-1638000772 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
-	"include/CardFlip.h"
-	"images/ImageHeader.h"
+1638010876 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
 	"CardFlipMain.h"
 	<wx/msgdlg.h>
 	<wx/intl.h>
@@ -2027,7 +2025,7 @@
 	"wx/control.h"
 	"wx/icon.h"
 
-1638008100 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\betters.cpp
+1638010429 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\betters.cpp
 	<algorithm>
 	<stdlib.h>
 	"../include/Betters.h"
