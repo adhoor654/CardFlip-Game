@@ -75,7 +75,7 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a column that doesn't have any used cards
-                bet.setBetCode(31+col); //betCode [31,34]
+                bet.setBetCode(30+col); //betCode [31,34]
                 return bet;
             }
             //otherwise, we want to try the next column, so...
@@ -119,7 +119,7 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a row that doesn't have any used cards
-                bet.setBetCode(25+row); //betCode [25,30]
+                bet.setBetCode(24+row); //betCode [25,30]
                 return bet;
             }
             //otherwise, we want to try the next row, so...
@@ -159,7 +159,7 @@ Bet CleverBetter::placeBet(DeckIterator deckIt, int n) {
             }
 
             if (!betHasAHole) { //we've found a card that hasn't been used
-                bet.setBetCode(id); //betCode [25,30]
+                bet.setBetCode(id); //betCode [1,24]
                 return bet;
             }
             //otherwise, we want to try the next card, so...

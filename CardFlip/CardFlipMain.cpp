@@ -144,7 +144,7 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     wxStaticBoxSizer* youBoxSizer;
 
     Create(parent, wxID_ANY, _("CardFlip"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
-    SetClientSize(wxSize(920,740));
+    SetClientSize(wxSize(950,615));
     SetBackgroundColour(wxColour(226,226,233));
     outerSizer = new wxBoxSizer(wxHORIZONTAL);
     leftSizer = new wxBoxSizer(wxVERTICAL);
@@ -302,13 +302,13 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     draw_card_button = new wxBitmapButton(this, ID_BITMAPBUTTON18, wxNullBitmap, wxDefaultPosition, wxDefaultSize, wxNO_BORDER, wxDefaultValidator, _T("ID_BITMAPBUTTON18"));
     draw_card_button->SetMinSize(wxSize(110,50));
     draw_card_button->SetMaxSize(wxSize(110,50));
-    rightSizer->Add(draw_card_button, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    rightSizer->Add(draw_card_button, 1, wxALL|wxALIGN_CENTER_HORIZONTAL, 5);
     card_display = new wxStaticBitmap(this, ID_STATICBITMAP2, wxNullBitmap, wxDefaultPosition, wxSize(100,100), wxNO_BORDER, _T("ID_STATICBITMAP2"));
     card_display->SetMinSize(wxSize(100,100));
     card_display->SetMaxSize(wxSize(100,100));
-    rightSizer->Add(card_display, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 10);
+    rightSizer->Add(card_display, 1, wxALL|wxALIGN_CENTER_HORIZONTAL, 10);
     roundLabel = new wxStaticText(this, ID_STATICTEXT7, _("Round ##"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT7"));
-    rightSizer->Add(roundLabel, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    rightSizer->Add(roundLabel, 1, wxALL|wxALIGN_CENTER_HORIZONTAL, 5);
     cpuBoxSizer = new wxStaticBoxSizer(wxVERTICAL, this, _("CPU"));
     theirBetLabel = new wxStaticText(this, ID_STATICTEXT4, _("Their bet:"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT4"));
     cpuBoxSizer->Add(theirBetLabel, 1, wxALL|wxEXPAND, 5);
@@ -317,7 +317,7 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     theirScoreLabel = new wxStaticText(this, ID_STATICTEXT6, _("Score: 0"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT6"));
     cpuBoxSizer->Add(theirScoreLabel, 1, wxALL|wxEXPAND, 5);
     rightSizer->Add(cpuBoxSizer, 1, wxALL|wxEXPAND, 5);
-    outerSizer->Add(rightSizer, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    outerSizer->Add(rightSizer, 1, wxALL|wxEXPAND, 5);
     SetSizer(outerSizer);
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
@@ -345,6 +345,7 @@ CardFlipFrame::CardFlipFrame(wxWindow* parent,wxWindowID id)
     //*)
     Connect(idMenuNewGame,wxEVT_COMMAND_MENU_SELECTED, (wxObjectEventFunction)&CardFlipFrame::OnNewGame);
 
+    SetClientSize(wxSize(950,615));
     SetIcon(bicon);
 
     setImages();
@@ -661,7 +662,7 @@ void CardFlipFrame::OnQuit(wxCommandEvent& event)
 
 void CardFlipFrame::OnAbout(wxCommandEvent& event)
 {
-    wxString msg = "CardFlip lasts for 12 rounds.\nEach round, use the buttons in the left area\nto bet on which card will be drawn next.\nThe smaller the bet, the higher the payout.\nGood luck!";
+    wxString msg = "CardFlip lasts for 12 rounds.\nEach round, use the buttons in the left area to bet on which card\nwill be drawn next.\nThe smaller the bet, the higher the payout.\nGood luck!";
     wxMessageBox(msg, _("How to play"));
 }
 
@@ -673,6 +674,8 @@ void CardFlipFrame::resetGame(int difficulty) {
     setCPUBetLabel("");
     setCPUPayoutLabel("");
     setCPUScore("0");
+    yourBetLabel->SetForegroundColour(wxColour(0,0,0));
+    theirBetLabel->SetForegroundColour(wxColour(0,0,0));
     yourScoreLabel->SetForegroundColour(wxColour(0,0,0));
     theirScoreLabel->SetForegroundColour(wxColour(0,0,0));
     card_display->SetBitmap(cardImages[0]);
@@ -941,9 +944,26 @@ void CardFlipFrame::Ondraw_card_buttonClick(wxCommandEvent& event) {
         int cardID = game->getCard().getID();
         updateCardDisplay(cardID);
         pair<bool,bool> winStatus = game->playRound(betCode);
+
         updateCPUBet(game->getCPUBetInfo());
         updateScores();
+        if (winStatus.first) { //player's bet was correct
+            yourBetLabel->SetForegroundColour(wxColour(0,102,204));
+            yourBetLabel->Refresh();
+        }
+        else {
+            yourBetLabel->SetForegroundColour(wxColour(0,0,0));
+            yourBetLabel->Refresh();
+        }
 
+        if (winStatus.second) { //computer's bet was correct
+            theirBetLabel->SetForegroundColour(wxColour(0,102,204));
+            theirBetLabel->Refresh();
+        }
+        else {
+            theirBetLabel->SetForegroundColour(wxColour(0,0,0));
+            theirBetLabel->Refresh();
+        }
         /* for debug
         pair<int,int> temp = game->getCPUBetInfo();
         msg += wxString::Format(wxT("\nPlayer bet: %i"), betCode);
