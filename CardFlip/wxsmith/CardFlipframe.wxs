@@ -2,7 +2,7 @@
 <wxsmith>
 	<object class="wxFrame" name="CardFlipFrame">
 		<title>CardFlip</title>
-		<size>920,795</size>
+		<size>920,760</size>
 		<bg>#E2E2E9</bg>
 		<id_arg>0</id_arg>
 		<object class="wxBoxSizer" variable="outerSizer" member="no">
@@ -22,6 +22,7 @@
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON1" variable="col_12_button" member="yes">
+											<bg>#E2E2E9</bg>
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -32,6 +33,7 @@
 										<object class="wxBoxSizer" variable="colSizer1" member="no">
 											<object class="sizeritem">
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON3" variable="col_1_button" member="yes">
+													<bg>#E2E2E9</bg>
 													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -40,6 +42,7 @@
 											</object>
 											<object class="sizeritem">
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON4" variable="col_2_button" member="yes">
+													<bg>#E2E2E9</bg>
 													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -47,12 +50,12 @@
 												<option>1</option>
 											</object>
 										</object>
-										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<flag>wxALL|wxEXPAND</flag>
 										<border>5</border>
 										<option>1</option>
 									</object>
 								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -61,6 +64,7 @@
 									<orient>wxVERTICAL</orient>
 									<object class="sizeritem">
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON2" variable="col_34_button" member="yes">
+											<bg>#E2E2E9</bg>
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -71,6 +75,7 @@
 										<object class="wxBoxSizer" variable="colSizer2" member="no">
 											<object class="sizeritem">
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON5" variable="col_3_button" member="yes">
+													<bg>#E2E2E9</bg>
 													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -79,6 +84,7 @@
 											</object>
 											<object class="sizeritem">
 												<object class="wxBitmapButton" name="ID_BITMAPBUTTON6" variable="col_4_button" member="yes">
+													<bg>#E2E2E9</bg>
 													<style>wxNO_BORDER</style>
 												</object>
 												<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -86,17 +92,17 @@
 												<option>1</option>
 											</object>
 										</object>
-										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+										<flag>wxALL|wxEXPAND</flag>
 										<border>5</border>
 										<option>1</option>
 									</object>
 								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
@@ -106,6 +112,7 @@
 								<object class="wxBoxSizer" variable="secondSizer1" member="no">
 									<object class="sizeritem">
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON7" variable="row_12_button" member="yes">
+											<bg>#E2E2E9</bg>
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -238,7 +245,7 @@
 								<option>1</option>
 							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
@@ -248,6 +255,7 @@
 								<object class="wxBoxSizer" variable="thirdSizer1" member="no">
 									<object class="sizeritem">
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON19" variable="row_34_button" member="yes">
+											<bg>#E2E2E9</bg>
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -380,7 +388,7 @@
 								<option>1</option>
 							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
@@ -390,6 +398,7 @@
 								<object class="wxBoxSizer" variable="fourthSizer1" member="no">
 									<object class="sizeritem">
 										<object class="wxBitmapButton" name="ID_BITMAPBUTTON30" variable="row_56_button" member="yes">
+											<bg>#E2E2E9</bg>
 											<style>wxNO_BORDER</style>
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
@@ -522,12 +531,12 @@
 								<option>1</option>
 							</object>
 						</object>
-						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<option>1</option>
 					</object>
 				</object>
-				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<flag>wxALL|wxEXPAND</flag>
 				<border>5</border>
 				<option>1</option>
 			</object>
@@ -542,7 +551,7 @@
 								<object class="wxStaticText" name="ID_STATICTEXT1" variable="yourBetLabel" member="yes">
 									<label>Your bet:</label>
 								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -550,7 +559,7 @@
 								<object class="wxStaticText" name="ID_STATICTEXT2" variable="yourPayoutLabel" member="yes">
 									<label>Payout:</label>
 								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -558,7 +567,7 @@
 								<object class="wxStaticText" name="ID_STATICTEXT3" variable="yourScoreLabel" member="yes">
 									<label>Score: 0</label>
 								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -568,37 +577,32 @@
 						<option>1</option>
 					</object>
 					<object class="sizeritem">
-						<object class="wxBoxSizer" variable="cardSizer" member="no">
-							<orient>wxVERTICAL</orient>
-							<object class="sizeritem">
-								<object class="wxBitmapButton" name="ID_BITMAPBUTTON18" variable="draw_card_button" member="yes">
-									<minsize>110,50</minsize>
-									<maxsize>110,50</maxsize>
-									<style>wxNO_BORDER</style>
-								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
-								<border>5</border>
-								<option>1</option>
-							</object>
-							<object class="sizeritem">
-								<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="card_display" member="yes">
-									<size>100,100</size>
-									<minsize>100,100</minsize>
-									<maxsize>100,100</maxsize>
-									<style>wxNO_BORDER</style>
-								</object>
-								<flag>wxALL|wxEXPAND|wxFIXED_MINSIZE</flag>
-								<border>10</border>
-								<option>1</option>
-							</object>
-							<object class="sizeritem">
-								<object class="wxStaticText" name="ID_STATICTEXT7" variable="roundLabel" member="yes">
-									<label>Round ##</label>
-								</object>
-								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
-								<border>5</border>
-								<option>1</option>
-							</object>
+						<object class="wxBitmapButton" name="ID_BITMAPBUTTON18" variable="draw_card_button" member="yes">
+							<minsize>110,50</minsize>
+							<maxsize>110,50</maxsize>
+							<style>wxNO_BORDER</style>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxStaticBitmap" name="ID_STATICBITMAP2" variable="card_display" member="yes">
+							<size>100,100</size>
+							<minsize>100,100</minsize>
+							<maxsize>100,100</maxsize>
+							<style>wxNO_BORDER</style>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>10</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT7" variable="roundLabel" member="yes">
+							<label>Round ##</label>
+							<size>110,50</size>
+							<minsize>110,50</minsize>
+							<maxsize>110,50</maxsize>
 						</object>
 						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 						<border>5</border>
@@ -612,15 +616,7 @@
 								<object class="wxStaticText" name="ID_STATICTEXT4" variable="theirBetLabel" member="yes">
 									<label>Their bet:</label>
 								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
-								<border>5</border>
-								<option>1</option>
-							</object>
-							<object class="sizeritem">
-								<object class="wxStaticText" name="ID_STATICTEXT5" variable="theirPayoutLabel" member="yes">
-									<label>Payout:</label>
-								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -628,7 +624,15 @@
 								<object class="wxStaticText" name="ID_STATICTEXT6" variable="theirScoreLabel" member="yes">
 									<label>Score: 0</label>
 								</object>
-								<flag>wxALL|wxALIGN_LEFT</flag>
+								<flag>wxALL|wxEXPAND</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT5" variable="theirPayoutLabel" member="yes">
+									<label>Payout:</label>
+								</object>
+								<flag>wxALL|wxEXPAND</flag>
 								<border>5</border>
 								<option>1</option>
 							</object>
@@ -646,19 +650,24 @@
 		<object class="wxMenuBar" variable="MenuBar1" member="no">
 			<object class="wxMenu" variable="Menu1" member="no">
 				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuNewGame" variable="MenuItem3" member="no">
+					<label>New Game</label>
+					<accel>F5</accel>
+					<help>Start a new game</help>
+				</object>
 				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
 					<label>Quit</label>
 					<accel>Alt-F4</accel>
-					<help>Quit the application</help>
+					<help>Quit the game</help>
 					<handler function="OnQuit" entry="EVT_MENU" />
 				</object>
 			</object>
 			<object class="wxMenu" variable="Menu2" member="no">
 				<label>Help</label>
 				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
-					<label>About</label>
+					<label>How to play</label>
 					<accel>F1</accel>
-					<help>Show info about this application</help>
+					<help>Show game instructions</help>
 					<handler function="OnAbout" entry="EVT_MENU" />
 				</object>
 			</object>

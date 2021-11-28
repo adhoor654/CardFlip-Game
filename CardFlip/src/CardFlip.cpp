@@ -21,6 +21,8 @@ CardFlip::CardFlip(int difficulty) {
 }
 
 void CardFlip::reset(int difficulty) {
+    user.resetScore();
+    computer.resetScore();
     srand(time(NULL));
     computer.setBetterType(difficulty);
     deck.shuffle();

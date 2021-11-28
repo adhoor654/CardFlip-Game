@@ -1,3 +1,6 @@
+#ifndef IMAGES_H
+#define IMAGES_H
+
 #include "payout_info.xpm"
 #include "icon.xpm"
 
@@ -54,20 +57,20 @@
 #include "8_pressed.xpm"
 #include "9_pressed.xpm"
 #include "10_pressed.xpm"
-// #include "11_pressed.xpm"
-// #include "12_pressed.xpm"
-// #include "13_pressed.xpm"
-// #include "14_pressed.xpm"
-// #include "15_pressed.xpm"
-// #include "16_pressed.xpm"
-// #include "17_pressed.xpm"
-// #include "18_pressed.xpm"
-// #include "19_pressed.xpm"
-// #include "20_pressed.xpm"
-// #include "21_pressed.xpm"
-// #include "22_pressed.xpm"
-// #include "23_pressed.xpm"
-// #include "24_pressed.xpm"
+#include "11_pressed.xpm"
+#include "12_pressed.xpm"
+#include "13_pressed.xpm"
+#include "14_pressed.xpm"
+#include "15_pressed.xpm"
+#include "16_pressed.xpm"
+#include "17_pressed.xpm"
+#include "18_pressed.xpm"
+#include "19_pressed.xpm"
+#include "20_pressed.xpm"
+#include "21_pressed.xpm"
+#include "22_pressed.xpm"
+#include "23_pressed.xpm"
+#include "24_pressed.xpm"
 #include "col_1-2_pressed.xpm"
 #include "col_3-4_pressed.xpm"
 #include "col_1_pressed.xpm"
@@ -109,3 +112,5 @@
 #include "card_22.xpm"
 #include "card_23.xpm"
 #include "card_24.xpm"
+
+#endif /* IMAGES_H */

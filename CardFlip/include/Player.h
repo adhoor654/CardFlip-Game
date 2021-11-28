@@ -16,6 +16,7 @@ class Player {
     void placeBet(DeckIterator deckIt, int roundMinusOne);
     void useBetCode(int betCode);
     bool resolveBet(Card card);
+    void resetScore();
     int getScore();
     int getPayout();
     int getBetCode();

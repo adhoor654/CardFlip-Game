@@ -82,6 +82,9 @@ bool Player::resolveBet(Card card) {
     return false;
 }
 
+void Player::resetScore() {
+    score = 0;
+}
 int Player::getScore() {
 	return score;
 }

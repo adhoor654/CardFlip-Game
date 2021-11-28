@@ -10,6 +10,7 @@
 #ifndef CARDFLIPMAIN_H
 #define CARDFLIPMAIN_H
 
+#include <wx/choicdlg.h>
 #include "include/CardFlip.h"
 #include "images/ImageHeader.h"
 //(*Headers(CardFlipFrame)
@@ -48,6 +49,7 @@ class CardFlipFrame: public wxFrame
             "All clubs & spades", "All hearts & diamonds"};
 
         //(*Handlers(CardFlipFrame)
+        void OnNewGame(wxCommandEvent& event);
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
         //*)
@@ -102,6 +104,7 @@ class CardFlipFrame: public wxFrame
         static const long ID_STATICTEXT4;
         static const long ID_STATICTEXT5;
         static const long ID_STATICTEXT6;
+        static const long idMenuNewGame;
         static const long idMenuQuit;
         static const long idMenuAbout;
         static const long ID_STATUSBAR1;
@@ -160,6 +163,8 @@ class CardFlipFrame: public wxFrame
         wxStatusBar* statusBar;
         //*)
 
+    void resetGame(int difficulty);
+
     void setRoundLabel(wxString str);
 
     void setBetLabel(wxString str);
@@ -170,12 +175,6 @@ class CardFlipFrame: public wxFrame
 
     void setScore(wxString str);
     void setCPUScore(wxString str);
-
-    void boldLabels();
-    void boldCPULabels();
-
-    void unboldLabels();
-    void unboldCPULabels();
 
     void updateCPUBet(pair<int,int> info);
     void updateScores();
