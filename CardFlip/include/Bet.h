@@ -9,9 +9,9 @@ using namespace std;
 
 class Bet {
 private:
-    vector<Card> cards;
-    int payout;
-    int betCode;
+    vector<Card> cards; //the set of cards in the bet
+    int payout; //the amount a player's score would go up if the bet was correct
+    int betCode; //the code corresponding to the specific bet made
 
 public:
     bool isEmpty() {

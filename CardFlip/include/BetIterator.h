@@ -9,7 +9,6 @@ class BetIterator : public Iterator {
 public:
     BetIterator(vector<Card> v) : vec(v), cursor(0) {}
 
-    //Card  first()        { return vec[0]; }
     Card  current() { return vec[cursor]; }
     Card  next()    { return vec[++cursor]; }
     bool isDone()   { return (cursor >= vec.size()); }

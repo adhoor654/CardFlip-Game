@@ -1,7 +1,7 @@
 /***************************************************************
  * Name:      CardFlipMain.h
  * Purpose:   Defines Application Frame
- * Author:     ()
+ * Author:    Anmol Dhoor ()
  * Created:   2021-11-23
  * Copyright:  ()
  * License:
@@ -12,7 +12,8 @@
 
 #include <wx/choicdlg.h>
 #include "include/CardFlip.h"
-#include "images/ImageHeader.h"
+#include "images/ImageHeader.h" //contains inclusions for XMP data of every image in the game
+
 //(*Headers(CardFlipFrame)
 #include <wx/bmpbuttn.h>
 #include <wx/frame.h>
@@ -26,17 +27,13 @@
 class CardFlipFrame: public wxFrame
 {
     public:
-
-        CardFlipFrame(wxWindow* parent,wxWindowID id = -1);
+        CardFlipFrame(wxWindow* parent,wxWindowID id = -1); //initialize the contents of the frame and start a game on Normal difficulty
         virtual ~CardFlipFrame();
-
-
     private:
-        CardFlip *game;
-        int betCode;
-        wxStaticText* yourBet;
-        vector<wxBitmap> cardImages;
-        string betNames[40] = {"Unexpected result",
+        CardFlip *game; //pointer to our game
+        int betCode; //holds the betCode until the player clicks the DRAW CARD button
+        vector<wxBitmap> cardImages; //vector holding all the images for cards in the deck
+        string betNames[40] = {"Unexpected result", //array holding the strings corresponding to each possible bet
             "Red club", "Red spade", "Red heart", "Red diamond",
             "Orange club", "Orange spade", "Orange heart", "Orange diamond",
             "Yellow club", "Yellow spade", "Yellow heart", "Yellow diamond",
@@ -163,8 +160,9 @@ class CardFlipFrame: public wxFrame
         wxStatusBar* statusBar;
         //*)
 
-    void resetGame(int difficulty);
+    void resetGame(int difficulty); //used to create a new game based on the given difficulty
 
+    //update the text for the corresponding labels
     void setRoundLabel(wxString str);
 
     void setBetLabel(wxString str);
@@ -176,14 +174,18 @@ class CardFlipFrame: public wxFrame
     void setScore(wxString str);
     void setCPUScore(wxString str);
 
-    void updateCPUBet(pair<int,int> info);
+    void updateCPUBet(pair<int,int> info); //param:Computer's betCode and payout for this round
     void updateScores();
+    //--
 
-    void updateCardDisplay(int cardID);
+    void updateCardDisplay(int cardID); //update the card display with the card drawn this round (uses cardImages vector)
 
-    void setImages();
-    void bindButtons();
+    //used when initializing the frame
+    void setImages(); //set images to each bitmap button, and to the other image displays
+    void bindButtons(); //bind all the buttons to their functions
+    //--
 
+    //button click functions
     void Oncol_12_buttonClick(wxCommandEvent& event);
     void Oncol_34_buttonClick(wxCommandEvent& event);
     void Oncol_1_buttonClick(wxCommandEvent& event);
@@ -227,6 +229,7 @@ class CardFlipFrame: public wxFrame
     void Onrow_6_buttonClick(wxCommandEvent& event);
 
     void Ondraw_card_buttonClick(wxCommandEvent& event);
+    //--
         DECLARE_EVENT_TABLE()
 };
 

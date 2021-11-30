@@ -2,10 +2,9 @@
 <wxsmith>
 	<object class="wxFrame" name="CardFlipFrame">
 		<title>CardFlip</title>
-		<size>950,740</size>
+		<size>950,615</size>
 		<bg>#E2E2E9</bg>
 		<id_arg>0</id_arg>
-		<size_arg>1</size_arg>
 		<object class="wxBoxSizer" variable="outerSizer" member="no">
 			<object class="sizeritem">
 				<object class="wxBoxSizer" variable="leftSizer" member="no">
@@ -640,7 +639,7 @@
 						<option>1</option>
 					</object>
 				</object>
-				<flag>wxALL</flag>
+				<flag>wxALL|wxEXPAND</flag>
 				<border>5</border>
 				<option>1</option>
 			</object>

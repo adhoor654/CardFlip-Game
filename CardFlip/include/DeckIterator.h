@@ -9,7 +9,6 @@ public:
     DeckIterator(Card arr[])
         : array(arr), cursor(0) {}
 
-    //Card  first()        { return array[0]; }
     Card  current() { return array[cursor]; }
     Card  next()    { return array[++cursor]; }
     bool  isDone()  { return (cursor >= 12); }

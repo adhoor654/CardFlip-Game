@@ -3,13 +3,6 @@
 #include <time.h>
 #include <utility>
 
-/* private variables (for temporary reference):
-    Player user;
-    Player computer;
-    Deck deck;
-    DeckIterator *deckIt; //do we need this?
-    int round; */
-
 CardFlip::CardFlip(int difficulty) {
     Player user;
     Player computer;
@@ -29,7 +22,7 @@ void CardFlip::reset(int difficulty) {
     deckIt = deck.createIterator();
     round = 1;
 
-    deck.printCards();
+    //deck.printCards();
 }
 
 int CardFlip::getRound() {

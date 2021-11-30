@@ -1690,7 +1690,7 @@
 1587575368 c:\wxwidgets-3.0.5\include\wx\univ\theme.h
 	"wx/string.h"
 
-1638069458 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
+1638242379 c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.h
 	<wx/choicdlg.h>
 	"include/CardFlip.h"
 	"images/ImageHeader.h"
@@ -1803,7 +1803,7 @@
 	"wx/list.h"
 	"wx/dynarray.h"
 
-1638069137 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
+1638243813 source:c:\users\drizi\documents\github\cardflip-game\cardflip\cardflipmain.cpp
 	"CardFlipMain.h"
 	<wx/msgdlg.h>
 	<wx/intl.h>
@@ -2035,16 +2035,16 @@
 	"Bet.h"
 	"Deck.h"
 
-1638008068 c:\users\drizi\documents\github\cardflip-game\cardflip\include\bet.h
+1638243542 c:\users\drizi\documents\github\cardflip-game\cardflip\include\bet.h
 	<iostream>
 	<vector>
 	"BetIterator.h"
 
-1637622117 c:\users\drizi\documents\github\cardflip-game\cardflip\include\betiterator.h
+1638243460 c:\users\drizi\documents\github\cardflip-game\cardflip\include\betiterator.h
 	<vector>
 	"Iterator.h"
 
-1637622516 c:\users\drizi\documents\github\cardflip-game\cardflip\include\iterator.h
+1638243470 c:\users\drizi\documents\github\cardflip-game\cardflip\include\iterator.h
 	"Card.h"
 
 1637270743 c:\users\drizi\documents\github\cardflip-game\cardflip\include\card.h
@@ -2054,18 +2054,18 @@
 	<stdlib.h>
 	"DeckIterator.h"
 
-1637640225 c:\users\drizi\documents\github\cardflip-game\cardflip\include\deckiterator.h
+1638243453 c:\users\drizi\documents\github\cardflip-game\cardflip\include\deckiterator.h
 	"Iterator.h"
 
-1638057553 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\cardflip.cpp
+1638243421 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\cardflip.cpp
 	"../include/CardFlip.h"
 	<time.h>
 	<utility>
 
-1638016353 c:\users\drizi\documents\github\cardflip-game\cardflip\include\cardflip.h
+1638242793 c:\users\drizi\documents\github\cardflip-game\cardflip\include\cardflip.h
 	"Player.h"
 
-1638057518 c:\users\drizi\documents\github\cardflip-game\cardflip\include\player.h
+1638243416 c:\users\drizi\documents\github\cardflip-game\cardflip\include\player.h
 	"Betters.h"
 
 1638057542 source:c:\users\drizi\documents\github\cardflip-game\cardflip\src\player.cpp

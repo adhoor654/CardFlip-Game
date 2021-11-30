@@ -1,7 +1,7 @@
 /***************************************************************
  * Name:      CardFlipMain.cpp
  * Purpose:   Code for Application Frame
- * Author:     ()
+ * Author:    Anmol Dhoor ()
  * Created:   2021-11-23
  * Copyright:  ()
  * License:
@@ -647,7 +647,7 @@ void CardFlipFrame::OnNewGame(wxCommandEvent& event)
     difficulties.Add("Hard");
 
     int choice = wxGetSingleChoiceIndex(
-        "Message", "Caption", difficulties, 0);
+        "Choose difficulty:", "Start a new game", difficulties, 0);
 
     if (choice == -1) ; //do nothing
     else {
